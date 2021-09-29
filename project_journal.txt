@@ -1,5 +1,8 @@
 [9/29/21]
 ________________
+* I began this project a couple of weeks ago, and then forgot where I left off and didn't really remember what I was
+    doing when I stopped...so I decided I'd just start over from the beginning and keep a much more methodical journal.
+
 
 1. Project set-up and Django environment deployment.
 
@@ -8,15 +11,15 @@ ________________
 3. User story created - functional_tests 'expected fails'
 
 4. Unit Tests vs Functional Tests:
-    Functional tests: tests the app's function from user's POV
-    Unit tests: tests the application from the dev's POV
+    _Functional tests_  tests the app's function from user's POV
+    _Unit tests_        tests the application from the dev's POV
 
 5. TDD approach thus far:
     a. Start by writing functional test that describes the new functionality from user's POV
 
     b. Once we have a FAILING functional test, begin to brainstorm how to write CODE to get it to PASS
-        - now write unit tests to define how we want our code to behave.
-        - each line of production code we write should be tested by (at least) one unit test
+        > now write unit tests to define how we want our code to behave.
+        > each line of production code we write should be tested by (at least) one unit test
 
     c. Once we have FAILING unit test, write small amount of application code, just to get unit test to pass.
 
@@ -43,13 +46,16 @@ ________________
             3. Repeat
 
 10. Now run functional test and check output.  FAILED? But, it's just our reminder to finish.
-        TDD Principle:
-            _ Whenever you leave the project to take a break, just rerun the last test to figure out where you left off _
-    Our functional_test.py told us to 'Finish the test!', so we will.
+
+        |TDD Principle|
+       __* Whenever you leave the project to take a break, just rerun the last test to figure out where you left off *__
+
+        > Our functional_test.py told us to 'Finish the test!', so we will.
 
 11. Resuming functional_test.py, checks were added.
-        TDD Principle #2:
-            _ Don't test constants.  Unit tests should test logic, flow control, and configuration _
+
+        |TDD Principle #2|
+            __* Don't test constants.  Unit tests should test logic, flow control, and configuration *__
 
     * The hardcoded html in views.py isn't great, should use templates instead (aka refactor).
     a. Created directory called 'templates' under lists (lists/templates) - then created home.html
@@ -58,11 +64,15 @@ ________________
 12. After some test cleanup and refactoring the hardcoded html as a template, need to use Django's render_to_string
     function which will allow rendering of the home.html file as a string so that tests can be run.
 
-    Imported Django Test Client and used the built in 'assertTemplateUsed'
+    > Imported Django Test Client and used the built-in 'assertTemplateUsed'
 
-    Instead of manually creating an HttpRequest object and calling the view function directly, use self.client.get('URL')
+    > Instead of manually creating an HttpRequest object and calling the view function directly, use self.client.get('URL')
 
-    Remove old test_root_url_resolves since this is tested by Django Test Client
+    > Remove old test_root_url_resolves since this is tested by Django Test Client
 
-    _ TIP (refactoring): When refactoring, work on either the code or the tests, but not both at once _
-    * It's also a good idea to commit after a refactor
+    __* TIP (refactoring): When refactoring, work on either the code or the tests, but not both at once *__
+        * (It's also a good idea to commit after a refactor)
+
+13. With unit test passing, we need to address the failing functional_test.py
+
+    a. need to add an <h1>
