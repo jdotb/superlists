@@ -22,3 +22,15 @@ ________________
 
     d. Now rerun functional tests and see if they pass, or at least show progress towards passing.  Use info to guide
         next steps - either write new unit tests, then new code, etc.
+
+6. TDD methodology requires small, incremental changes to code - after creating unit test under /lists/tests.py we ran
+    python manage.py test to find an expected failure (which is the next best thing to a passing test).  Now that we
+    have both a failing unit test and a failing functional test - the Testing Goat give his blessing to code away.
+
+7. We have edited tests.py to look for 'home_page' then run test - ImportError: cannot import name 'home_page'
+
+    So then, we went to views.py and added home_page = None, and reran the test...
+        ERROR: django.urls.exceptions.Resolver404: {'path': '.'}
+            * The test failure is telling us that we need a URL mapping (urls.py)
+8. In urls.py we remove the admin, import views, and add (r'^$', views.home_page, name='home') and rerun the test
+        PASS!
