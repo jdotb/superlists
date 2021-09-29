@@ -33,4 +33,10 @@ ________________
         ERROR: django.urls.exceptions.Resolver404: {'path': '.'}
             * The test failure is telling us that we need a URL mapping (urls.py)
 8. In urls.py we remove the admin, import views, and add (r'^$', views.home_page, name='home') and rerun the test
-        PASS!
+        PASS! - make commits
+
+9.  Next, make changes to unit test by adding some checks (second test).
+        TDD unit-test/code cycle:
+            1. In terminal, run unit tests and see how they fail
+            2. In the editor, make minimal code change to address the current test failure, rerun test.
+            3. Repeat
