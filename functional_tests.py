@@ -40,17 +40,44 @@ class NewVisitorTest(unittest.TestCase):
 
         table = self.browser.find_element(By.ID, 'id_list_table')
         rows = table.find_elements(By.TAG_NAME, 'tr')
-        self.assertTrue(
-            any(row.text == '1: Buy new done' for row in rows),
-            "\n\n>>>> FAILURE: New to-do item did not appear in table"
-        )
+
+        #### #### #### #### #### #### EDIT 1 #### #### #### #### #### #### #### #### ####
+        # self.assertTrue(
+        #     any(row.text == '1: Buy new done' for row in rows),
+        #     f"\n\n>>>> FAILURE: New to-do item did not appear in table.\nContents:\t{table.text}")
+        #
+        # ^^^ REMOVED ^^^ - replaced with line below, because it's much simpler, and we get the same
+        #   level of information 'for free'
+        #
+        #   New failure output:
+        #       AssertionError: '1: Buy new drone' not found in ['Buy new drone']
+        #
+        #   Old failure output:
+        #       >>>> FAILURE: New to - do item did not appear in table.
+        #           Contents:       [Buy new drone]
+        #
+        #### #### #### #### #### #### #### #### #### #### #### #### #### #### #### ####
+
+        self.assertIn('1: Buy new drone', [row.text for row in rows])
+
         # James notices a new text box awaits his input, so he enters "Find a cool place to fly new drone"
-        self.fail('Finish the test!')
+        inputbox = self.browser.find_element(By.ID, 'id_new_item')
+        inputbox.send_keys('Find a cool place to find drone')
+        inputbox.send_keys(Keys.ENTER)
+        time.sleep(1)
+
+
         # The page refreshes and now he sees both of the items he's added to the list
+        table = self.browser.find_element(By.ID, 'id_list_table')
+        rows = table.find_elements(By.TAG_NAME, 'tr')
+        self.assertIn('1: Buy new drone', [row.text for row in rows])
+        self.assertIn('2: Find a cool place to fly new drone',
+                      [row.text for row in rows]
+                      )
 
         # James ponders whether or not the site will remember his list.  Then, to his surprise, he notices the site has generated
         # a unique URL...just for him
-
+        self.fail('Finish the test!')
         # James notes down the unique url and visits the page - wow! His to-do list is still there!
 
         # Satisfied that his to-do list is safe, he goes about his day

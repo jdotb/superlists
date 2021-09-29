@@ -1,7 +1,8 @@
 [9/29/21]
 ________________
-* I began this project a couple of weeks ago, and then forgot where I left off and didn't really remember what I was
-    doing when I stopped...so I decided I'd just start over from the beginning and keep a much more methodical journal.
+* I began this project a couple of weeks ago, but I didn't start at the beginning.  When I came back to it,
+    I forgot where I left off, and didn't really remember what I was doing when I stopped...
+    so I decided I'd just start over from the beginning and keep a much more methodical journal.
 
 
 1. Project set-up and Django environment deployment.
@@ -75,4 +76,41 @@ ________________
 
 13. With unit test passing, we need to address the failing functional_test.py
 
-    a. need to add an <h1>
+    Need to add:
+        a. <h1> (then test)
+        b. input element with id="id_new_item" and placeholder text (then test)
+        c. table "id_list_table" (then test)
+
+    * The remaining failure is vague, added a failure message to the assertTrue method
+
+    COMMIT
+
+14. Note:
+        >> Functional tests are the ultimate judge of whether your app works or not <<
+        >> Unit tests are a tool to help you along the way <<
+
+15. Saving user data
+        > A form needs to be added with a POST method, add it and test.
+        > Failure - returned 'forbidden' due to no CSRF token - add with {% csrf_token %}
+        > rerunning functional_tests.py gives us the expected failure.
+        > Still need to config an action= attribute in the form, and setup view to handle POSTs
+        > Add POST submission to table
+        > {{ ... }} includes python object as string
+
+        Note: unit-test/code cycle sometimes known as Red, Green, Refactor
+            - Write failing test (red)
+            - Write simple code to get it to pass (Green, even if you have to 'cheat')
+            - Refactor
+
+        > See EDIT 1 in functional_test.py (ln 44)
+        > still failing... so we have to cheat by adding the 1 manually (will revisit this issue later)
+
+        <tr><td>1:  {{ new_item_text }}</td></tr>
+                ^
+    > wrapping up, we see our self.fail('Finish the test!')
+
+16. Return to fix our 'cheat'
+    > added tests to check our form data and elements, but we're still failing (still cheating)
+    > follow the DRY (don't repeat yourself) and 3 strikes and refactor principles.
+        > Three occurrences of code block begets a refactor
+        > before refactor, COMMIT
