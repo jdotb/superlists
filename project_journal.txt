@@ -40,3 +40,8 @@ ________________
             1. In terminal, run unit tests and see how they fail
             2. In the editor, make minimal code change to address the current test failure, rerun test.
             3. Repeat
+
+10. Now run functional test and check output.  FAILED? But, it's just our reminder to finnish.
+        TDD Principle:
+            - Whenever you leave the project to take a break, just rerun the last test to figure out where you left off.
+    Our functional_test.py told us to 'Finish the test!', so we will.
