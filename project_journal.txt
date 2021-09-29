@@ -1,0 +1,6 @@
+9/29/21
+
+1. Project set-up and Django environment deployment.
+2. Git setup and first commit.
+3. User story created - functional_tests 'expected fails'
+4. 
