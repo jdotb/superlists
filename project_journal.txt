@@ -110,7 +110,14 @@ ________________
     > wrapping up, we see our self.fail('Finish the test!')
 
 16. Return to fix our 'cheat'
-    > added tests to check our form data and elements, but we're still failing (still cheating)
-    > follow the DRY (don't repeat yourself) and 3 strikes and refactor principles.
+    > Added tests to check our form data and elements, but we're still failing (still cheating)
+    > Follow the DRY (don't repeat yourself) and 3 strikes and refactor principles.
         > Three occurrences of code block begets a refactor
         > before refactor, COMMIT
+
+    > Need to fix the issue of only being able to handle 1 list item in table
+    > In functional test, we can write a helper function and not worry about test execution because only
+        functions that begin with test will be executed
+    > Created helper function to CHECK the list items, but they aren't persisting yet, but the test works.
+
+    > after refactor, COMMIT!
