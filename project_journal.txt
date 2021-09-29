@@ -1,6 +1,24 @@
-9/29/21
+[9/29/21]
+________________
 
 1. Project set-up and Django environment deployment.
+
 2. Git setup and first commit.
+
 3. User story created - functional_tests 'expected fails'
-4. 
+
+4. Unit Tests vs Functional Tests:
+    Functional tests: tests the app's function from user's POV
+    Unit tests: tests the application from the dev's POV
+
+5. TDD approach thus far:
+    a. Start by writing functional test that describes the new functionality from user's POV
+
+    b. Once we have a FAILING functional test, begin to brainstorm how to write CODE to get it to PASS
+        - now write unit tests to define how we want our code to behave.
+        - each line of production code we write should be tested by (at least) one unit test
+
+    c. Once we have FAILING unit test, write small amount of application code, just to get unit test to pass.
+
+    d. Now rerun functional tests and see if they pass, or at least show progress towards passing.  Use info to guide
+        next steps - either write new unit tests, then new code, etc.
