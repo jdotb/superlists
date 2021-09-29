@@ -36,12 +36,33 @@ ________________
         PASS! - make commits
 
 9.  Next, make changes to unit test by adding some checks (second test).
+
         TDD unit-test/code cycle:
             1. In terminal, run unit tests and see how they fail
             2. In the editor, make minimal code change to address the current test failure, rerun test.
             3. Repeat
 
-10. Now run functional test and check output.  FAILED? But, it's just our reminder to finnish.
+10. Now run functional test and check output.  FAILED? But, it's just our reminder to finish.
         TDD Principle:
-            - Whenever you leave the project to take a break, just rerun the last test to figure out where you left off.
+            _ Whenever you leave the project to take a break, just rerun the last test to figure out where you left off _
     Our functional_test.py told us to 'Finish the test!', so we will.
+
+11. Resuming functional_test.py, checks were added.
+        TDD Principle #2:
+            _ Don't test constants.  Unit tests should test logic, flow control, and configuration _
+
+    * The hardcoded html in views.py isn't great, should use templates instead (aka refactor).
+    a. Created directory called 'templates' under lists (lists/templates) - then created home.html
+    b. Must add 'lists' to INSTALLED_APPS (superlists/superlists/settings.py)
+
+12. After some test cleanup and refactoring the hardcoded html as a template, need to use Django's render_to_string
+    function which will allow rendering of the home.html file as a string so that tests can be run.
+
+    Imported Django Test Client and used the built in 'assertTemplateUsed'
+
+    Instead of manually creating an HttpRequest object and calling the view function directly, use self.client.get('URL')
+
+    Remove old test_root_url_resolves since this is tested by Django Test Client
+
+    _ TIP (refactoring): When refactoring, work on either the code or the tests, but not both at once _
+    * It's also a good idea to commit after a refactor
