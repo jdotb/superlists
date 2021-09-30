@@ -36,10 +36,13 @@ class Item(models.Model):
 #       Note: We've gotten all the way through saving the last two Items, and checked if saved in db, but Django
 #       hasn't remembered the .text attribute.
 #   #   #   #   #   #   #   ##   #   #   #   #   #   #   #
+class List(models.Model):
+    pass
+
 
 class Item(models.Model):
     text = models.TextField(default='')  # <- This could be IntegerField, CharField, DateField, etc
-
+    list = models.ForeignKey(List, default=None)
 
 #   #   #   #   #   #   #   ##   #   #   #   #   #   #   #
 # The above produces 'no such column: list_item.text

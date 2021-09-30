@@ -353,3 +353,12 @@ ________________
                     ** We haven't changed the forms in home.html and lists.html to point to new URL
                     ** after the POST actions are fixed, we're back to working!
                     ** COMMIT!
+
+> Model adjustment
+    * in tests.py we need to create a new List object, then assign each item to it by assigning it as its .list property.
+        Check that the list is saved, and also check that the two items have saved their relationship to the list.
+
+    * after making the List object relate to our Item object properly, we're back passing our unit tests.
+
+    * as of now, still creating a new list for each new item submission and still displaying all items as if they
+        belong to the same list.
