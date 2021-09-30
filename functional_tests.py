@@ -70,7 +70,7 @@ class NewVisitorTest(unittest.TestCase):
 
         ## James notices a new text box awaits his input, so he enters "Find a cool place to fly new drone"
         inputbox = self.browser.find_element(By.ID, 'id_new_item')
-        inputbox.send_keys('Find a cool place to fly drone')
+        inputbox.send_keys('Find a cool place to fly new drone')
         inputbox.send_keys(Keys.ENTER)
         time.sleep(1)
 

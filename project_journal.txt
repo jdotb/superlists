@@ -121,3 +121,67 @@ ________________
     > Created helper function to CHECK the list items, but they aren't persisting yet, but the test works.
 
     > after refactor, COMMIT!
+
+
+17. Django ORM and our first model
+
+    ORM - Object-relational-mapper is a layer of abstraction for data stored in a database with tables, rows, and cols.
+        > Allows familiar object-oriented metaphors which work well with code.
+        > Classes map to database tables
+        > Attributes map to columns
+        > Individual instance of the class represents a row of data in the db
+
+    > In lists/tests.py create new class ItemModelTest
+        >> To create a new record in the db, create an object, assign attribs, and call .save()
+        >> Can also query API via class attrib .objects | can also use .all() for all records for table
+        >> Results returns as list-like object called QuerySet which can be further queried
+
+    > Added class to models.py and now we have passing test lists
+    > COMMIT!
+    > Now, on to saving the POST to the db
+
+18. Posts/redirect/views
+    > While testing, seems POST test is getting too long?
+        >> TO-DO:
+        >> Don't save blank items for each request (fixed)
+        >> Display multiple items in table
+        >> Support more than one list
+
+    ** A (view) function has two jobs:
+        1. Process user input
+        2. Return an appropriate response
+
+    ** ALWAYS REDIRECT AFTER A POST!
+        > Instead of rendering a response with the item in it, redirect back to home
+
+    > Implemented the redirect, now need to test for the handling
+    > Made changes and see the correct # of passing tests (5)
+
+    > TO-DO (cont)
+        >> Address display multiple items in the table (create test to check)
+        >> Can use Django template syntax to loop through lists
+        >> Use {% for item in items %} in home.html
+
+        > Add the loop to home.html, passed from views
+        > unit tests passing, now test functional
+            * FAIL
+        > 'To-Do' not found in 'OperationalError at /' (db error)
+            > The reason the unit tests passed is due to Django making a special 'test db' for the unit tests
+        > Need to setup db using this:
+            $ python manage.py migrate
+
+        > SUCESS! The page now renders! Test again.
+            * FAIL
+            - Numbering in the list is still wonky
+            - Can use another Django template tag: forloop.counter
+                    {% for item in items %}
+                        <tr><td>{{ forloop.counter }}: {{ item.text }} </td></tr>
+                    {% endfor %}
+
+        > Test is passing, but page is displaying dupes of the list items.
+            Item 1
+            Item 2
+            Item 1
+            Item 2
+            ...
+        > Need to manually rebuilt db (optional)

@@ -12,7 +12,10 @@
     </form>
 
     <table id="id_list_table">
-        <tr><td>1:  {{ new_item_text }}</td></tr>
+        // This is Django syntax to loop through the items in the list
+        {% for item in items %}
+            <tr><td>{{ forloop.counter }}: {{ item.text }} </td></tr>
+        {% endfor %}
     </table>
 </body>
 </html>
