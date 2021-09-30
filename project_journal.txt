@@ -291,7 +291,7 @@ ________________
                 # To add new item to existing list, use seperate URL which we can send POST requests
 
                     /lists/<list identifier>/add_item
-    * In summary (TO-DO list):
+***** In summary (TO-DO list):
         1. Adjust model so that items are associated with different lists
         2. Add unique URL for each list
         3. Add a URL for creating new list via POST
@@ -339,3 +339,17 @@ ________________
                         * unit tests down to 6 items
                         * we need a template for lists (list.html)...create that.
                         * we will need to test to make sure the template is being used correctly
+
+> As far as the to-do list is concerned, we barely made much progress on item #2
+    * We need a new URL for adding new list items
+    * Add new test class for new list creation
+    ** After adding this test, failure tells us that we aren't saving to db and second failure tells us we haven't
+        built a URL for /lists/new yet
+
+> All the above fixed, and unit tests are passing! But our FT are failing...ANOTHER REGRESSION!
+    * The fails are test_can_start_a_list_for_one_user
+                    test_multiple_users_can_start_lists_at_different_urls
+                    * both failing to find element: [id='id_list_table']
+                    ** We haven't changed the forms in home.html and lists.html to point to new URL
+                    ** after the POST actions are fixed, we're back to working!
+                    ** COMMIT!
