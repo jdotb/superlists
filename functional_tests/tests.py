@@ -1,11 +1,15 @@
+from django.test import LiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
-import unittest
 
 
-class NewVisitorTest(unittest.TestCase):
+# import unittest
+# ^ REMOVED and replace with LiveServerTestCase
+
+
+class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -21,8 +25,9 @@ class NewVisitorTest(unittest.TestCase):
 
     ## James has read about this new hip online to-do app.  He browses to check it out
     def test_can_start_a_list_and_retrieve_it_later(self):
-
-        self.browser.get('http://localhost:8000')
+        # self.browser.get('http://localhost:8000')
+        # ^ REMOVED - LiveServerTestCase gives live_server_url
+        self.browser.get(self.live_server_url)
 
         ## He notices the page title and header mention to-do lists
         self.assertIn('To-Do', self.browser.title)
@@ -77,14 +82,14 @@ class NewVisitorTest(unittest.TestCase):
         ## The page refreshes and now he sees both of the items he's added to the list
         self.check_for_row_in_list_table('1: Buy new drone')
         self.check_for_row_in_list_table('2: Find a cool place to fly new drone')
-        #>>> EDIT 2 #### #### #### #### EDIT 2 ####
+        # >>> EDIT 2 #### #### #### #### EDIT 2 ####
         #
         # table = self.browser.find_element(By.ID, 'id_list_table')
         # rows = table.find_elements(By.TAG_NAME, 'tr')
         # self.assertIn('1: Buy new drone', [row.text for row in rows])
         # self.assertIn('2: Find a cool place to fly new drone', [row.text for row in rows])
         #
-        #>>> END EDIT 2 #### #### #### #### EDIT 2 ####
+        # >>> END EDIT 2 #### #### #### #### EDIT 2 ####
 
         # James ponders whether or not the site will remember his list.  Then, to his surprise, he notices the site
         # has generated a unique URL...just for him
@@ -93,6 +98,6 @@ class NewVisitorTest(unittest.TestCase):
 
         # Satisfied that his to-do list is safe, he goes about his day
 
-
-if __name__ == '__main__':
-    unittest.main(warnings='ignore')
+# if __name__ == '__main__':
+#     unittest.main(warnings='ignore')
+# ^ REMOVED since Django will be launching the test case

@@ -185,3 +185,56 @@ ________________
             Item 2
             ...
         > Need to manually rebuilt db (optional)
+
+ ----------------
+||    RECAP      ||
+ ----------------
+	>   Have a form set up to add new items to the list using POST.
+
+	>   Set up a simple model in the database to save list items.
+
+	>   Learned about creating database migrations, both for the test database
+	    (where they’re applying automatically) and for the real database (have
+	    to apply them manually).
+
+	>   Used first couple of Django template tags:
+		    {% csrf_token %}
+		    {% for ... endfor %} loop.
+
+	>   Used at least three different FT debugging techniques:
+		    - in-line print statements
+		    - time.sleeps
+		    - and improving the error messages
+
+
+===========================================================================================
+
+> Test runs are interfering with each other - functional tests are leaving items in the db, causing duplicate lists,
+    which ultimatly caused the tests to fail.
+
+    >> Solution 1: 'roll our own' and place in setUP and tearDown methods
+
+    >> Solution 2: Django's LiveServerTestCase
+
+            - test db created so we don't have dupes
+            - test runner finds files beginning with 'test'
+
+    >> Solution 2 is best.
+
+    >> Let's implement solution 2
+
+        >>> make a folder for functional tests (so it looks like an app)
+            1. add an __init__.py to make this folder a package
+            2. move functional_tests.py to functional_tests folder
+            3. rename functional_tests.py to tests.py
+            4. use git mv so that vcs recognizes the change
+
+            5. Now, instead of running:
+                $ python functional_tests.py
+            6.  run:
+                $ python manage.py functional_tests
+
+            7. Edit new functional_tests/tests.py, change NewVisitorTest class to use LiveServerTestCase
+
+            ** First run goes great, the only fail is our reminder to finish the test.
+            ** The old list items problem is also solved.
