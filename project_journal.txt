@@ -362,3 +362,39 @@ ________________
 
     * as of now, still creating a new list for each new item submission and still displaying all items as if they
         belong to the same list.
+
+    * COMMIT!
+
+    ** Our to-do list is down to the very last item!  We just need to make each list have its own URL.
+
+> Each List should have Its Own URL
+
+    * The easiest identifier to use is the id from the db, change ListViewTest to test this
+        ** add List objects and populate them, then check their contents
+        ** when the tests are run, we get 404 since we haven't actually made the connection yet
+        ** when we update urls to take a param, we test, and fail - we haven't updated views to expect an arg yet.
+        ** back to our expected failure:
+
+            AssertionError: 1 != 0 : Response should not contain 'other list item 1'
+
+        ** We need to change views and have it choose which items to send to the template (change Items = objects.all())
+        ** Once we run tests again, another failure:
+
+            ValueError: invalid literal for int() with base 10: 'the-only-list-in-the-world'
+
+            > This makes sense since we're not using that anymore, but I don't know right away what's happening.
+            > We're failing under the test_redirects_after_POST test...so I'll start there.
+
+            * Changed the redirect to test for the new list and id, same error
+            * In views, changed the new_list to actually redirect using the correct URL
+            * Still failing, but now different:
+                AttributeError: 'function' object has no attribute 'id'
+                * Fixed typo, now passing unit tests - check FT
+                ** FT failing due to the fact that a new list is created for every single POST.
+                ** We can fix this by mapping a URL and a view when adding a new item to an existing list
+                    (/lists/<list_id>/add_item)
+
+            * Create a method for add_item (to existing list) using same schema as we've been using (add method in views, map URL)
+            * need to add a form method to add item to list in list.html template
+            * after all completed, tests ran and BOTH PASSING!
+            * need to refactor - but COMMIT FIRST!
