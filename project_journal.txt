@@ -238,3 +238,65 @@ ________________
 
             ** First run goes great, the only fail is our reminder to finish the test.
             ** The old list items problem is also solved.
+
+            ** Now when we run:
+
+                $ python manage.py test
+
+                * BOTH the functional and unit tests are run!
+
+            ** To run just the unit tests:
+
+                $ python manage.py test lists
+
+    >> Still need to use better waits (not sleep)
+
+        >>> time.sleep(1) is an explicit wait, which could add up in larger tests
+        >>> implicit_wait (from Selenium) is buggy, and should be avoided
+        >>> need to change 'check_for_row_in_list_table' to 'wait_for_row_in_list_table' using polling/retry logic
+        >>> after this is implemented, need to intentionally break to check our logic
+
+            * self.assertIn('foo', [row.text for row in rows]) added and we get good failure message.
+            * Tests are working!
+            * make this change:
+                        try:
+                table = self.browser.find_element(By.ID, 'id_nothing')
+                                                               ^ change
+            * This time our exceptions are raised and our MAX_WAIT time is exceeded
+            * Tests are working!
+
+> Back to the issue that our design only allows for one global list
+
+    * Remember that we're aiming to push out a *minimum viable app* early and let design evolve gradually based on feedback
+
+    * What we want so far:
+        1. Each user should be able to store their own list
+        2. A list has several items in it, whose primary attribute is a descriptive text
+        3. We need to save lists from one visit to the next.
+            - we can give each user a unique URL for now
+
+        ** To get this working, we'll store the lists and their items in a db, each list will have a unique URL
+        ** We'll use a REST approach
+
+            > REST suggests we have a URL structure that matches our data structure:
+
+                # each list has its own url:
+
+                    /lists/<list identifier>            to view: [GET]
+
+                # create new list, special URL that accepts POST requests
+
+                    /lists/new
+
+                # To add new item to existing list, use seperate URL which we can send POST requests
+
+                    /lists/<list identifier>/add_item
+    * In summary:
+        1. Adjust model so that items are associated with different lists
+        2. Add unique URL for each list
+        3. Add a URL for creating new list via POST
+        4. Add URLs for adding a new item to an existing list via POST
+
+        * REMEMBER TDD! We need to create TESTS first.
+
+        * We will begin by updating our 'user story' by adding a second user and make sure the list is at a unique URL
