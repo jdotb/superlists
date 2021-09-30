@@ -291,7 +291,7 @@ ________________
                 # To add new item to existing list, use seperate URL which we can send POST requests
 
                     /lists/<list identifier>/add_item
-    * In summary:
+    * In summary (TO-DO list):
         1. Adjust model so that items are associated with different lists
         2. Add unique URL for each list
         3. Add a URL for creating new list via POST
@@ -300,3 +300,42 @@ ________________
         * REMEMBER TDD! We need to create TESTS first.
 
         * We will begin by updating our 'user story' by adding a second user and make sure the list is at a unique URL
+
+> Implementing the new design
+    * Referring back to the TO-DO list and our failing test - item #2 is what needs to be addressed next since the
+        regexp is what's failing.
+
+        > The URL comes from the redirect after a POST - check out test_redirects_after_POST in lists/tests.py
+            and change the expected redirect location.
+
+        !! After these changes, both tests are failing since there is no /the-only-list-in-the-world/ and tests are failing
+            after trying to submit the first item because the list table can't be found
+                ** WE'VE INTRODUCED A REGRESSION!
+
+        > Edit tests.py to check that all items displayed
+            * replaced assertIn(response.content.decode()) with assertContains() <- method that knows how to deal with responses
+
+        > Our failing tests are telling us that the new URL doesn't exist yet - fix that by adding it to urls.py
+
+        > After fixing the URL, tests are still failing
+
+            AttributeError: module 'lists.views' has no attribute 'view_list'
+
+            * we know our url is at least being seen now, but not being seen just enough, need to edit views.py
+            * after some fixes, we get unit tests passing
+            * functional tests are getting to first item, but not second item
+                - Unit tests passing, so URLs and views are proper
+                - Home page displaying correct template and can handle POSTs
+                - The only-list-in-the-world knows how to display all items...but can't handle POST requests
+
+                * Adding the existing home page view fixes the issue
+                * all old functionality working again
+                * Red/Green/Refactor states since we're now GREEN, we need to clean up and refactor
+                    > We have two views:
+                        1. Home page
+                        2. Individual lists
+
+                        * home page no longer displays lists, so we can remove those tests
+                        * unit tests down to 6 items
+                        * we need a template for lists (list.html)...create that.
+                        * we will need to test to make sure the template is being used correctly
