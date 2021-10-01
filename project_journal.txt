@@ -403,3 +403,25 @@ ________________
 
 > We've finished up importing CSS (bootstrap) and adding blocks for our template inheritance
     * Still need to map the static files in settings.py - actually this was already done when I went to do it!
+    * I've been gone for a few things, but they were completed.
+        1. Learned that the static files shouldn't be in the app repo, so that was moved to ../static
+        2. Had to define the static URL in settings.py
+        3. Learned that Django has a neat feature to gather up your static files:
+
+                $ manage.py collectstatic
+    * All of that has been completed and now...we're going to push to a live server environment
+
+> Deploying
+
+    * Some dangers to deployment:
+        1. Static files need special configs
+        2. The db needs special attention
+        3. Dependencies need to be on the server
+
+    * To address some of these:
+        1. Use a staging site on same infrastructre as production site
+        2. Functional tests a run against the staging stie
+        3. Add a venv to the server
+        4. Automated script deployment
+
+    ** Deployment procedure:
