@@ -398,3 +398,8 @@ ________________
             * need to add a form method to add item to list in list.html template
             * after all completed, tests ran and BOTH PASSING!
             * need to refactor - but COMMIT FIRST!
+
+> Had to do a git reset, so I lost some notes.
+
+> We've finished up importing CSS (bootstrap) and adding blocks for our template inheritance
+    * Still need to map the static files in settings.py - actually this was already done when I went to do it!
