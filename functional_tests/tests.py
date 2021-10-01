@@ -40,7 +40,10 @@ class NewVisitorTest(LiveServerTestCase):
                 time.sleep(0.5)
 
     ## START USER STORY - JAMES
-    ## James has read about this new hip online to-do app.  He browses to check it out
+    # ----------------------- #
+    ## James has read about this new hip online to-do app.
+    #   He browses to check it out
+
     def test_can_start_a_list_for_one_user(self):
         self.browser.get(self.live_server_url)
 
@@ -91,11 +94,11 @@ class NewVisitorTest(LiveServerTestCase):
 
         # Now a new user, Candice, comes to the site
 
-        ## Use a new browser session to make sure that no info of James's is coming through from cookies etc
+        ## Use a new browser session to make sure that no info of James' is coming through from cookies etc
         self.browser.quit()
         self.browser = webdriver.Firefox()
 
-        # Candice visits the home page. There is no sign of James's list
+        # Candice visits the home page and doesn't see any trace of James' list
         self.browser.get(self.live_server_url)
         page_text = self.browser.find_element_by_tag_name('body').text
         self.assertNotIn('Buy new drone', page_text)
@@ -112,9 +115,33 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertRegex(candice_list_url, '/lists/.+')
         self.assertNotEqual(candice_list_url, james_list_url)
 
-        # Again, there is no trace of James's list
+        # Checking again, there is no trace of James's list
         page_text = self.browser.find_element_by_tag_name('body').text
         self.assertNotIn('Buy new drone', page_text)
         self.assertIn('Buy cheese', page_text)
 
         # Satisfied, they both go back to sleep
+
+    def test_layout_and_styling(self):
+        # James browses to the home page
+        self.browser.get(self.live_server_url)
+        self.browser.set_window_size(1024, 768)
+
+        # He sees the input box is centered
+        inputbox = self.browser.find_element_by_id('id_new_item')
+        self.assertAlmostEqual(
+            inputbox.location['x'] + inputbox.size['width'] / 2,
+            512,
+            delta=10
+        )
+
+        # He begins a new list and sees the input is centered there as well
+        inputbox.send_keys('testing')
+        inputbox.send_keys(Keys.ENTER)
+        self.wait_for_row_in_list_table('1: testing')
+        inputbox = self.browser.find_element_by_id('id_new_item')
+        self.assertAlmostEqual(
+            inputbox.location['x'] + inputbox.size['width'] / 2,
+            512,
+            delta=10
+        )
