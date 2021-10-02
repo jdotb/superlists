@@ -425,3 +425,167 @@ ________________
         4. Automated script deployment
 
     ** Deployment procedure:
+
+    [A] I have created a droplet on digitalocean using Ubuntu 20.04
+            i) setup droplet
+nginx
+           ii) install nginx on droplet and start
+(start)
+                $ sudo nginx start
+
+                # To get the status #
+
+                $ systemctl status nginx
+
+                * Look for Active: active (running) - may be in green (mine was)
+
+|nginx|
+                - SERVER_IP = 165.227.200.9
+
+            iii) config firewall on droplet
+
+                $ sudo ufw app list
+
+                # Nginx Full
+                # Nginx HTTP
+                # Nginx HTTPS
+                # OpenSSH
+
+                ^^  brings up app profiles, should select the MOST restrictive, so we only need port 80
+
+|nginx|  - select Nginx HTTP (port 80) by doing:
+
+            $ sudo ufw allow 'Nginx HTTP'
+
+        - verify by typing:
+
+            $ sudo ufw status
+
+        iv) get server ip by:
+
+            $ curl -4 icanhazip.com
+
+            * The ip that is shown is the nginx server ip
+
+|nginx|
+        v) navigate to http://SERVER-IP in browser
+            * If you see the 'Welcome to nginx' message, you're all good
+
+        vi) Further nginx management:
+            $ sudo systemctl stop nginx         # stops webserver
+            $ sudo systemctl start nginx        # starts webserver
+            $ sudo systemctl restart nginx      # restarts webserver
+            $ sudo systemctl reload nginx       # use after config changes
+            $ sudo systemctl disable nginx      # disable system start
+            $ sudo systemctl enable nginx       # enable system start (default)
+
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|nginx|
+        vii) Nginx serves docs from /var/www/html by default, but to make server blocks:
+
+            ~ Can create server blocks to serve multiple sites from single server
+
+            1. create directory structure for my_domain
+                $ sudo mkdir -p /var/www/my_domain/html
+            2. assign ownership with $USER env var
+                $ sudo chown -R $USER:$USER /var/www/my_domain/html
+            3. to ensure owner RWE (755) permissions, and others RE
+                $ sudo chmod -R 755 /var/www/my_domain
+            4. make sample html
+                $ nano /var/www/my_domain/html/index.html
+
+                then add:
+                    <html>
+                        <head>
+                            <title>Welcome to your_domain!</title>
+                        </head>
+                        <body>
+                            <h1>Success!  The your_domain server block is working!</h1>
+                        </body>
+                    </html>
+
+                * in nano - CTRL+X then Y then ENTER saves
+|nginx|
+            5. to serve the content, must create server block with appropriate directives
+                    * /etc/nginx/sites-available/my_domain
+
+                $ sudo nano /etc/nginx/sites-available/my_domain
+
+                then paste:
+
+                        server {
+                            listen 80;
+                            listen [::]:80;
+
+                            root /var/www/my_domain/html;
+                            index index.html index.htm index.nginx-debian.html;
+
+                            server_name my_domain www.my_domain;
+
+                            location / {
+                                    try_files $uri $uri/ =404;
+                            }
+                        }
+|nginx|
+            6. To avoid potential hash bucket mem issues, need to adjust /etc/nginx/nginx.conf
+
+                $ sudo nano /etc/nginx/nginx.conf
+
+                FIND: server_names_hash_bucket_size
+                REMOVE: '#'
+
+                (to search in nano, use CTRL+w)
+
+                * save and close
+
+            7. test syntax
+
+                $ sudo nginx -t
+
+            8. Restart nginx
+
+                $ sudo systemctl restart nginx
+
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+|python|
+    [B]  We also must have the correct python installed on the server, and last checked, that's found from
+            ppa:deadsnakes/ppa
+
+** If originally using Windows, and you have setup a VM on, say, Oracle's VirtualBox - you can share the folder you've
+    been working in to VBox.
+        1. From the menu at the top - select Devices > Shared Folders > Shared Folder Settings
+        2. Find the folder with a +, then find 'YourSourceRoot'
+        3. Add the folder, select a mount point, then select 'make permanent'
+        4. If the mount doesn't work (mine didn't) - you can mount manually this way (from terminal)
+
+            $  sharename="whatever.you.want.to.call.it";
+            $  sudo mkdir /mnt/$sharename
+            $  sudo chmod 777 /mnt/$sharename
+            $  sudo mount -t vboxsf -o uid=1000,gid=1000 $sharename /mnt/$sharename
+            $  ln -s /mnt/$sharename $HOME/Desktop/$sharename
+
+** If using a digitalocean droplet (like I am) - you'll want to configure your DNS to point to some-name vs IP
+
+    *** To do this, you have to navigate to 'networking' and then add the droplet domain and configure the 'A' record
+
+    *** This is somewhat convoluted, so follow along:
+        1. For the first record ('A' record) - enter '@' - then 'Add record'
+        2. For the second record ('A' record) - enter 'www' - then 'Add record'
+
+** on ubuntu VM - login with ssh
+    1. (ssh-root) create new non-root user
+
+        $ makeuser USER
+                                (gametime:******)
+
+    2. (ssh-USER) ssh into droplet as non-root user
+
+            root@droplet-name$  ssh droplet-IP -l root
+
+    3. mkdirs for live and staging pages
+    4. from the ubuntu-vm, you'll need to get your files onto the server by using rsync
+        ** I later learned that this is much easier with git
+
+            USER@droplet-name$  rsync -avz -e 'ssh' /path/to/local/dir USER@remotehost:/path/to/remote/dir
+

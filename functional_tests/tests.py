@@ -6,7 +6,8 @@ from selenium.common.exceptions import WebDriverException
 import time
 import os
 import unittest
-STAGING_SERVER = "superlists.jdotbdotb.com"
+
+STAGING_SERVER = "165.227.200.9"
 MAX_WAIT = 10
 
 
