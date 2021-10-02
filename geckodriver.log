@@ -1,0 +1,1604 @@
+1632940907222	geckodriver	INFO	Listening on 127.0.0.1:56605
+1632940910297	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileecvyam"
+1632940910577	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileecvyam\\search.json.mozlz4", (void 0)))
+1632940912096	Marionette	INFO	Listening on port 58390
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632940912359	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1632940912431	Marionette	INFO	Stopped listening on port 58390
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632941040659	geckodriver	INFO	Listening on 127.0.0.1:55589
+1632941043749	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilei3Dl3c"
+1632941044018	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilei3Dl3c\\search.json.mozlz4", (void 0)))
+1632941045637	Marionette	INFO	Listening on port 56172
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632941045790	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1632941045857	Marionette	INFO	Stopped listening on port 56172
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632941091058	geckodriver	INFO	Listening on 127.0.0.1:59654
+1632941094148	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilewdXfhy"
+1632941094423	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilewdXfhy\\search.json.mozlz4", (void 0)))
+1632941095937	Marionette	INFO	Listening on port 65295
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632941096193	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632941097284	Marionette	INFO	Stopped listening on port 65295
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632943218869	geckodriver	INFO	Listening on 127.0.0.1:55579
+1632943221950	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileIjlZPw"
+1632943222236	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileIjlZPw\\search.json.mozlz4", (void 0)))
+1632943223776	Marionette	INFO	Listening on port 54155
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632943224014	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632943225127	Marionette	INFO	Stopped listening on port 54155
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632943303150	geckodriver	INFO	Listening on 127.0.0.1:49914
+1632943306201	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilesWGpJv"
+1632943306478	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilesWGpJv\\search.json.mozlz4", (void 0)))
+1632943308031	Marionette	INFO	Listening on port 58857
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632943308255	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632943309370	Marionette	INFO	Stopped listening on port 58857
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632943324244	geckodriver	INFO	Listening on 127.0.0.1:57366
+1632943327316	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilem00xYz"
+1632943327588	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilem00xYz\\search.json.mozlz4", (void 0)))
+1632943329253	Marionette	INFO	Listening on port 60821
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632943329358	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632943330467	Marionette	INFO	Stopped listening on port 60821
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632943359498	geckodriver	INFO	Listening on 127.0.0.1:54864
+1632943362580	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileQgsk9S"
+1632943362850	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileQgsk9S\\search.json.mozlz4", (void 0)))
+1632943364380	Marionette	INFO	Listening on port 51111
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632943364646	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632943365774	Marionette	INFO	Stopped listening on port 51111
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  2
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632943392889	geckodriver	INFO	Listening on 127.0.0.1:50546
+1632943395942	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile2POcKf"
+1632943396212	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile2POcKf\\search.json.mozlz4", (void 0)))
+1632943397829	Marionette	INFO	Listening on port 64917
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632943397980	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632943399078	Marionette	INFO	Stopped listening on port 64917
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  2
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632943449072	geckodriver	INFO	Listening on 127.0.0.1:59722
+1632943452128	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilePNloAX"
+1632943452398	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilePNloAX\\search.json.mozlz4", (void 0)))
+1632943453951	Marionette	INFO	Listening on port 49371
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632943454163	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632943455273	Marionette	INFO	Stopped listening on port 49371
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632944278057	geckodriver	INFO	Listening on 127.0.0.1:62668
+1632944281114	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofiletK6mC5"
+1632944281393	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofiletK6mC5\\search.json.mozlz4", (void 0)))
+1632944283227	Marionette	INFO	Listening on port 62676
+1632944283276	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632944284407	Marionette	INFO	Stopped listening on port 62676
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632944338487	geckodriver	INFO	Listening on 127.0.0.1:64679
+1632944341542	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile6DvRnZ"
+1632944341819	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile6DvRnZ\\search.json.mozlz4", (void 0)))
+1632944343464	Marionette	INFO	Listening on port 58101
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632944343583	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632944353715	Marionette	INFO	Stopped listening on port 58101
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632946384634	geckodriver	INFO	Listening on 127.0.0.1:59856
+1632946387718	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileUSMrLY"
+1632946388002	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileUSMrLY\\search.json.mozlz4", (void 0)))
+1632946389890	Marionette	INFO	Listening on port 58718
+1632946390377	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632946400493	Marionette	INFO	Stopped listening on port 58718
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632947393842	geckodriver	INFO	Listening on 127.0.0.1:64697
+1632947396909	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilerQc3RW"
+1632947397237	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilerQc3RW\\search.json.mozlz4", (void 0)))
+1632947398847	Marionette	INFO	Listening on port 60093
+1632947398940	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632947400074	Marionette	INFO	Stopped listening on port 60093
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632947673486	geckodriver	INFO	Listening on 127.0.0.1:61024
+1632947676532	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileQhdvCa"
+1632947676840	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileQhdvCa\\search.json.mozlz4", (void 0)))
+1632947678704	Marionette	INFO	Listening on port 55269
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632947679184	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632947680314	Marionette	INFO	Stopped listening on port 55269
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632948077273	geckodriver	INFO	Listening on 127.0.0.1:59402
+1632948080382	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile583OQj"
+1632948080670	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile583OQj\\search.json.mozlz4", (void 0)))
+1632948082161	Marionette	INFO	Listening on port 50496
+1632948082432	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632948083574	Marionette	INFO	Stopped listening on port 50496
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632948182224	geckodriver	INFO	Listening on 127.0.0.1:64800
+1632948185289	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileZnFH4K"
+1632948185568	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileZnFH4K\\search.json.mozlz4", (void 0)))
+1632948187082	Marionette	INFO	Listening on port 63410
+1632948187352	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632948188542	Marionette	INFO	Stopped listening on port 63410
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632948222906	geckodriver	INFO	Listening on 127.0.0.1:64536
+1632948225996	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileKbWoYh"
+1632948226276	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileKbWoYh\\search.json.mozlz4", (void 0)))
+1632948228061	Marionette	INFO	Listening on port 50748
+1632948228146	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632948229299	Marionette	INFO	Stopped listening on port 50748
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632948249188	geckodriver	INFO	Listening on 127.0.0.1:50107
+1632948252259	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileUldaVw"
+1632948252545	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileUldaVw\\search.json.mozlz4", (void 0)))
+1632948254065	Marionette	INFO	Listening on port 54985
+1632948254309	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632948255438	Marionette	INFO	Stopped listening on port 54985
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632948496540	geckodriver	INFO	Listening on 127.0.0.1:62959
+1632948499634	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileexkbu3"
+1632948499919	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileexkbu3\\search.json.mozlz4", (void 0)))
+1632948501438	Marionette	INFO	Listening on port 50754
+1632948501669	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632948502808	Marionette	INFO	Stopped listening on port 50754
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632948899480	geckodriver	INFO	Listening on 127.0.0.1:50923
+1632948902570	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileXDAHwP"
+1632948902856	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileXDAHwP\\search.json.mozlz4", (void 0)))
+1632948904338	Marionette	INFO	Listening on port 50670
+1632948904630	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632948905791	Marionette	INFO	Stopped listening on port 50670
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632948968476	geckodriver	INFO	Listening on 127.0.0.1:49733
+1632948971545	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile885mQr"
+1632948971819	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile885mQr\\search.json.mozlz4", (void 0)))
+1632948973793	Marionette	INFO	Listening on port 64036
+1632948974230	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632948975360	Marionette	INFO	Stopped listening on port 64036
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632949540142	geckodriver	INFO	Listening on 127.0.0.1:59423
+1632949543244	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileeZVcoG"
+1632949543526	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileeZVcoG\\search.json.mozlz4", (void 0)))
+1632949545096	Marionette	INFO	Listening on port 49432
+1632949545284	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632949547492	Marionette	INFO	Stopped listening on port 49432
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632950652902	geckodriver	INFO	Listening on 127.0.0.1:63988
+1632950655989	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilemC3UFf"
+1632950656267	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilemC3UFf\\search.json.mozlz4", (void 0)))
+1632950657861	Marionette	INFO	Listening on port 64712
+1632950658037	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632950660243	Marionette	INFO	Stopped listening on port 64712
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632959320695	geckodriver	INFO	Listening on 127.0.0.1:59795
+1632959323759	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileQ16vHv"
+1632959324041	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileQ16vHv\\search.json.mozlz4", (void 0)))
+1632959326040	Marionette	INFO	Listening on port 57538
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632959326424	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1632959326595	Marionette	INFO	Stopped listening on port 57538
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632959643774	geckodriver	INFO	Listening on 127.0.0.1:51446
+1632959646830	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileZZadtC"
+1632959647066	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileZZadtC\\search.json.mozlz4", (void 0)))
+1632959648593	Marionette	INFO	Listening on port 50601
+1632959648879	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632959651043	Marionette	INFO	Stopped listening on port 50601
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1632959871120	geckodriver	INFO	Listening on 127.0.0.1:52237
+1632959874212	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileU0VzjV"
+1632959874442	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileU0VzjV\\search.json.mozlz4", (void 0)))
+1632959875946	Marionette	INFO	Listening on port 58730
+1632959876243	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632959878449	Marionette	INFO	Stopped listening on port 58730
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632959906111	geckodriver	INFO	Listening on 127.0.0.1:51155
+1632959909185	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile7iudDS"
+1632959909414	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile7iudDS\\search.json.mozlz4", (void 0)))
+1632959910979	Marionette	INFO	Listening on port 51163
+1632959911230	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632959913489	Marionette	INFO	Stopped listening on port 51163
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632959945885	geckodriver	INFO	Listening on 127.0.0.1:53449
+1632959948946	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilecI9OQj"
+1632959949222	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilecI9OQj\\search.json.mozlz4", (void 0)))
+1632959950744	Marionette	INFO	Listening on port 51461
+1632959950990	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1632959953267	Marionette	INFO	Stopped listening on port 51461
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  2
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1632960184651	geckodriver	INFO	Listening on 127.0.0.1:64987
+1632960187713	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileez8IxX"
+1632960187993	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileez8IxX\\search.json.mozlz4", (void 0)))
+1632960189734	Marionette	INFO	Listening on port 53624
+1632960189750	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1632960192034	Marionette	INFO	Stopped listening on port 53624
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633014742911	geckodriver	INFO	Listening on 127.0.0.1:52295
+1633014745973	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileUm0YVB"
+1633014746286	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileUm0YVB\\search.json.mozlz4", (void 0)))
+1633014747910	Marionette	INFO	Listening on port 57898
+1633014748030	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633014750221	Marionette	INFO	Stopped listening on port 57898
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633015004382	geckodriver	INFO	Listening on 127.0.0.1:61382
+1633015007467	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileeQI46R"
+1633015007755	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileeQI46R\\search.json.mozlz4", (void 0)))
+1633015009394	Marionette	INFO	Listening on port 55713
+1633015009509	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633015011697	Marionette	INFO	Stopped listening on port 55713
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633016042129	geckodriver	INFO	Listening on 127.0.0.1:63617
+1633016045227	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileRI0Pd4"
+1633016045503	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileRI0Pd4\\search.json.mozlz4", (void 0)))
+1633016047146	Marionette	INFO	Listening on port 60127
+1633016047275	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633016048504	Marionette	INFO	Stopped listening on port 60127
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633016197885	geckodriver	INFO	Listening on 127.0.0.1:54922
+1633016200943	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileMcohR2"
+1633016201219	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileMcohR2\\search.json.mozlz4", (void 0)))
+1633016202871	Marionette	INFO	Listening on port 61317
+1633016202985	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633016203617	Marionette	INFO	Stopped listening on port 61317
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633016289810	geckodriver	INFO	Listening on 127.0.0.1:53094
+1633016292883	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileS57uED"
+1633016293158	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileS57uED\\search.json.mozlz4", (void 0)))
+1633016294702	Marionette	INFO	Listening on port 59378
+1633016294944	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633016305345	Marionette	INFO	Stopped listening on port 59378
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633018428559	geckodriver	INFO	Listening on 127.0.0.1:64412
+1633018431622	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileKZWYyy"
+1633018431893	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileKZWYyy\\search.json.mozlz4", (void 0)))
+1633018433448	Marionette	INFO	Listening on port 64317
+1633018433659	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633018434865	Marionette	INFO	Stopped listening on port 64317
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633018437440	geckodriver	INFO	Listening on 127.0.0.1:59576
+1633018440514	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileO4LtIg"
+1633018440790	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileO4LtIg\\search.json.mozlz4", (void 0)))
+1633018442331	Marionette	INFO	Listening on port 50594
+1633018442550	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633018443171	Marionette	INFO	Stopped listening on port 50594
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+[Parent 1636, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633018509751	geckodriver	INFO	Listening on 127.0.0.1:62872
+1633018512817	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofiled4zIoZ"
+1633018513090	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofiled4zIoZ\\search.json.mozlz4", (void 0)))
+1633018514704	Marionette	INFO	Listening on port 54028
+1633018514853	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633018516052	Marionette	INFO	Stopped listening on port 54028
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633018518590	geckodriver	INFO	Listening on 127.0.0.1:57739
+1633018521647	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile5n8lMR"
+1633018521929	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile5n8lMR\\search.json.mozlz4", (void 0)))
+1633018523545	Marionette	INFO	Listening on port 57747
+1633018523691	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633018524309	Marionette	INFO	Stopped listening on port 57747
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633024387674	geckodriver	INFO	Listening on 127.0.0.1:54409
+1633024390782	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilem2y4sc"
+1633024391089	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilem2y4sc\\search.json.mozlz4", (void 0)))
+1633024392769	Marionette	INFO	Listening on port 63334
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633024392832	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633024394071	Marionette	INFO	Stopped listening on port 63334
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633024394682	geckodriver	INFO	Listening on 127.0.0.1:52601
+1633024397730	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilepgLQLT"
+1633024398021	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilepgLQLT\\search.json.mozlz4", (void 0)))
+1633024399491	Marionette	INFO	Listening on port 58474
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633024399779	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633024400401	Marionette	INFO	Stopped listening on port 58474
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633024548085	geckodriver	INFO	Listening on 127.0.0.1:65362
+1633024551131	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilecjvC0T"
+1633024551421	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilecjvC0T\\search.json.mozlz4", (void 0)))
+1633024553140	Marionette	INFO	Listening on port 55429
+1633024553201	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633024554388	Marionette	INFO	Stopped listening on port 55429
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633024554891	geckodriver	INFO	Listening on 127.0.0.1:64857
+1633024557961	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileYkgPas"
+1633024558240	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileYkgPas\\search.json.mozlz4", (void 0)))
+1633024559823	Marionette	INFO	Listening on port 56474
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633024560005	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633024560626	Marionette	INFO	Stopped listening on port 56474
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633025341232	geckodriver	INFO	Listening on 127.0.0.1:58397
+1633025344292	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile9HH5bj"
+1633025344572	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile9HH5bj\\search.json.mozlz4", (void 0)))
+1633025346190	Marionette	INFO	Listening on port 60054
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633025346322	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633025356717	Marionette	INFO	Stopped listening on port 60054
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633025357220	geckodriver	INFO	Listening on 127.0.0.1:62030
+1633025360284	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile1sMaVQ"
+1633025360563	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile1sMaVQ\\search.json.mozlz4", (void 0)))
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633025362274	Marionette	INFO	Listening on port 51019
+1633025362324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633025372694	Marionette	INFO	Stopped listening on port 51019
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633026487220	geckodriver	INFO	Listening on 127.0.0.1:60737
+1633026490283	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileJJZYFN"
+1633026490567	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileJJZYFN\\search.json.mozlz4", (void 0)))
+1633026492160	Marionette	INFO	Listening on port 55107
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633026492327	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633026502720	Marionette	INFO	Stopped listening on port 55107
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633026503234	geckodriver	INFO	Listening on 127.0.0.1:56535
+1633026506329	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilegFiOk8"
+1633026506605	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilegFiOk8\\search.json.mozlz4", (void 0)))
+1633026508148	Marionette	INFO	Listening on port 60682
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633026508382	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633026518760	Marionette	INFO	Stopped listening on port 60682
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633026617466	geckodriver	INFO	Listening on 127.0.0.1:50165
+1633026620530	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileOdLqRF"
+1633026620809	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileOdLqRF\\search.json.mozlz4", (void 0)))
+1633026622343	Marionette	INFO	Listening on port 50173
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633026622560	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633026634199	Marionette	INFO	Stopped listening on port 50173
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633026634691	geckodriver	INFO	Listening on 127.0.0.1:62989
+1633026637778	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileI48gRU"
+1633026638047	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileI48gRU\\search.json.mozlz4", (void 0)))
+1633026639793	Marionette	INFO	Listening on port 52419
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633026639835	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633026640483	Marionette	INFO	Stopped listening on port 52419
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633026640951	geckodriver	INFO	Listening on 127.0.0.1:62258
+1633026644006	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile7lxx0V"
+1633026644285	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile7lxx0V\\search.json.mozlz4", (void 0)))
+1633026645893	Marionette	INFO	Listening on port 49706
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633026646069	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633026646141	Marionette	INFO	Stopped listening on port 49706
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633026830310	geckodriver	INFO	Listening on 127.0.0.1:60647
+1633026833381	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilexzrFD0"
+1633026833654	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilexzrFD0\\search.json.mozlz4", (void 0)))
+1633026835180	Marionette	INFO	Listening on port 58972
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633026835413	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633026847078	Marionette	INFO	Stopped listening on port 58972
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633026847598	geckodriver	INFO	Listening on 127.0.0.1:51720
+1633026850657	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileVuJ6ff"
+1633026850957	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileVuJ6ff\\search.json.mozlz4", (void 0)))
+1633026852470	Marionette	INFO	Listening on port 57869
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633026852699	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633026853321	Marionette	INFO	Stopped listening on port 57869
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633026853823	geckodriver	INFO	Listening on 127.0.0.1:58396
+1633026856866	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilebBkBwm"
+1633026857136	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilebBkBwm\\search.json.mozlz4", (void 0)))
+1633026858571	Marionette	INFO	Listening on port 59453
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633026858906	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633026858992	Marionette	INFO	Stopped listening on port 59453
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 18528, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633026943618	geckodriver	INFO	Listening on 127.0.0.1:49641
+1633026946691	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileCxwUMg"
+1633026946967	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileCxwUMg\\search.json.mozlz4", (void 0)))
+1633026948546	Marionette	INFO	Listening on port 49649
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633026948733	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633026949408	Marionette	INFO	Stopped listening on port 49649
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633026949899	geckodriver	INFO	Listening on 127.0.0.1:56138
+1633026952944	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileqq573K"
+1633026953221	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileqq573K\\search.json.mozlz4", (void 0)))
+1633026954761	Marionette	INFO	Listening on port 56147
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633026954994	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633026955622	Marionette	INFO	Stopped listening on port 56147
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633026956109	geckodriver	INFO	Listening on 127.0.0.1:57690
+1633026959215	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileLVHRVG"
+1633026959501	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileLVHRVG\\search.json.mozlz4", (void 0)))
+1633026961044	Marionette	INFO	Listening on port 59057
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633026961274	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633026961342	Marionette	INFO	Stopped listening on port 59057
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633027982454	geckodriver	INFO	Listening on 127.0.0.1:54614
+1633027985526	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileGcXYzC"
+1633027985811	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileGcXYzC\\search.json.mozlz4", (void 0)))
+1633027987441	Marionette	INFO	Listening on port 52967
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633027987560	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633027998764	Marionette	INFO	Stopped listening on port 52967
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633027999258	geckodriver	INFO	Listening on 127.0.0.1:51799
+1633028002329	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileNGggJb"
+1633028002613	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileNGggJb\\search.json.mozlz4", (void 0)))
+1633028004228	Marionette	INFO	Listening on port 63413
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633028004374	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633028005009	Marionette	INFO	Stopped listening on port 63413
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633028005484	geckodriver	INFO	Listening on 127.0.0.1:57125
+1633028008553	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileGnYHA4"
+1633028008839	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileGnYHA4\\search.json.mozlz4", (void 0)))
+1633028010714	Marionette	INFO	Listening on port 64103
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633028011226	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633028021454	Marionette	INFO	Stopped listening on port 64103
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633028142978	geckodriver	INFO	Listening on 127.0.0.1:64075
+1633028146045	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile07rsgw"
+1633028146317	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile07rsgw\\search.json.mozlz4", (void 0)))
+1633028147908	Marionette	INFO	Listening on port 53484
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633028148092	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633028159803	Marionette	INFO	Stopped listening on port 53484
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633028160307	geckodriver	INFO	Listening on 127.0.0.1:52018
+1633028163401	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileTOCtEE"
+1633028163693	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileTOCtEE\\search.json.mozlz4", (void 0)))
+1633028165469	Marionette	INFO	Listening on port 50051
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633028165559	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633028166173	Marionette	INFO	Stopped listening on port 50051
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1633028166646	geckodriver	INFO	Listening on 127.0.0.1:55235
+1633028169693	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileQhVKCQ"
+1633028169971	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileQhVKCQ\\search.json.mozlz4", (void 0)))
+1633028171505	Marionette	INFO	Listening on port 50062
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633028171734	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633028182342	Marionette	INFO	Stopped listening on port 50062
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  2
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633029583881	geckodriver	INFO	Listening on 127.0.0.1:63190
+1633029586940	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilebSbwhP"
+1633029587236	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilebSbwhP\\search.json.mozlz4", (void 0)))
+1633029588907	Marionette	INFO	Listening on port 62876
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633029588990	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633029599360	Marionette	INFO	Stopped listening on port 62876
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633029599872	geckodriver	INFO	Listening on 127.0.0.1:51095
+1633029602938	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilecsNZQs"
+1633029603228	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilecsNZQs\\search.json.mozlz4", (void 0)))
+1633029605097	Marionette	INFO	Listening on port 52735
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633029605621	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633029615971	Marionette	INFO	Stopped listening on port 52735
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633029866250	geckodriver	INFO	Listening on 127.0.0.1:59537
+1633029869318	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileFZ0wKv"
+1633029869589	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileFZ0wKv\\search.json.mozlz4", (void 0)))
+1633029871408	Marionette	INFO	Listening on port 62296
+1633029871479	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633029882415	Marionette	INFO	Stopped listening on port 62296
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633029882905	geckodriver	INFO	Listening on 127.0.0.1:58512
+1633029885983	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilevorJK2"
+1633029886250	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilevorJK2\\search.json.mozlz4", (void 0)))
+1633029887926	Marionette	INFO	Listening on port 51759
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633029888033	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633029888631	Marionette	INFO	Stopped listening on port 51759
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633029889109	geckodriver	INFO	Listening on 127.0.0.1:61488
+1633029892152	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileJpmo5S"
+1633029892415	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileJpmo5S\\search.json.mozlz4", (void 0)))
+1633029894038	Marionette	INFO	Listening on port 60643
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633029894192	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633029904290	Marionette	INFO	Stopped listening on port 60643
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633029907913	geckodriver	INFO	Listening on 127.0.0.1:50262
+1633029911007	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileWWkaZi"
+1633029911283	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileWWkaZi\\search.json.mozlz4", (void 0)))
+1633029913099	Marionette	INFO	Listening on port 61948
+1633029913174	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633029913864	Marionette	INFO	Stopped listening on port 61948
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633029914340	geckodriver	INFO	Listening on 127.0.0.1:50360
+1633029917412	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilezP2rMj"
+1633029917690	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilezP2rMj\\search.json.mozlz4", (void 0)))
+1633029919239	Marionette	INFO	Listening on port 50368
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633029919451	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633029920066	Marionette	INFO	Stopped listening on port 50368
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633029920539	geckodriver	INFO	Listening on 127.0.0.1:55666
+1633029923699	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilecnidJ9"
+1633029924006	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilecnidJ9\\search.json.mozlz4", (void 0)))
+1633029925523	Marionette	INFO	Listening on port 60560
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633029925729	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633029936023	Marionette	INFO	Stopped listening on port 60560
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633035408055	geckodriver	INFO	Listening on 127.0.0.1:50073
+1633035411116	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileL84BRV"
+1633035411392	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileL84BRV\\search.json.mozlz4", (void 0)))
+1633035413039	Marionette	INFO	Listening on port 55904
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633035413161	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633035414354	Marionette	INFO	Stopped listening on port 55904
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633035414850	geckodriver	INFO	Listening on 127.0.0.1:54005
+1633035417915	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileqEjl0O"
+1633035418190	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileqEjl0O\\search.json.mozlz4", (void 0)))
+1633035419839	Marionette	INFO	Listening on port 61557
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633035419966	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633035420576	Marionette	INFO	Stopped listening on port 61557
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633035421054	geckodriver	INFO	Listening on 127.0.0.1:57167
+1633035424099	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileBSiig8"
+1633035424378	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileBSiig8\\search.json.mozlz4", (void 0)))
+1633035425993	Marionette	INFO	Listening on port 57693
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633035426137	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633035436410	Marionette	INFO	Stopped listening on port 57693
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633037599408	geckodriver	INFO	Listening on 127.0.0.1:60172
+1633037602483	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilen9LjBs"
+1633037602757	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilen9LjBs\\search.json.mozlz4", (void 0)))
+1633037604378	Marionette	INFO	Listening on port 61098
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633037604537	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633037615208	Marionette	INFO	Stopped listening on port 61098
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633037615709	geckodriver	INFO	Listening on 127.0.0.1:53729
+1633037618783	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilegNGBvB"
+1633037619053	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilegNGBvB\\search.json.mozlz4", (void 0)))
+1633037620608	Marionette	INFO	Listening on port 49955
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633037620834	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633037621440	Marionette	INFO	Stopped listening on port 49955
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633037621904	geckodriver	INFO	Listening on 127.0.0.1:54338
+1633037624972	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilerlxFtV"
+1633037625240	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilerlxFtV\\search.json.mozlz4", (void 0)))
+1633037627177	Marionette	INFO	Listening on port 64554
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633037627652	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633037628285	Marionette	INFO	Stopped listening on port 64554
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633042565082	geckodriver	INFO	Listening on 127.0.0.1:56878
+1633042568154	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile0ADykD"
+1633042568444	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile0ADykD\\search.json.mozlz4", (void 0)))
+1633042570278	Marionette	INFO	Listening on port 49477
+1633042570317	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633042580806	Marionette	INFO	Stopped listening on port 49477
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633042581338	geckodriver	INFO	Listening on 127.0.0.1:49167
+1633042584405	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileF63J7a"
+1633042584702	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileF63J7a\\search.json.mozlz4", (void 0)))
+1633042586208	Marionette	INFO	Listening on port 53634
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633042586451	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633042596865	Marionette	INFO	Stopped listening on port 53634
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633042775625	geckodriver	INFO	Listening on 127.0.0.1:57873
+1633042778678	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileJMkmul"
+1633042778957	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileJMkmul\\search.json.mozlz4", (void 0)))
+1633042780589	Marionette	INFO	Listening on port 50356
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633042780732	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633042781404	Marionette	INFO	Stopped listening on port 50356
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633042781872	geckodriver	INFO	Listening on 127.0.0.1:64363
+1633042784941	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile50UVBo"
+1633042785216	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile50UVBo\\search.json.mozlz4", (void 0)))
+1633042786809	Marionette	INFO	Listening on port 49354
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633042787001	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633042787624	Marionette	INFO	Stopped listening on port 49354
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633042788100	geckodriver	INFO	Listening on 127.0.0.1:50046
+1633042791176	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofiled4UrmZ"
+1633042791469	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofiled4UrmZ\\search.json.mozlz4", (void 0)))
+1633042793072	Marionette	INFO	Listening on port 55829
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633042793225	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633042793850	Marionette	INFO	Stopped listening on port 55829
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633093239125	geckodriver	INFO	Listening on 127.0.0.1:55551
+1633093242201	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileYVRf58"
+1633093242493	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileYVRf58\\search.json.mozlz4", (void 0)))
+1633093244017	Marionette	INFO	Listening on port 54888
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633093244251	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633093254659	Marionette	INFO	Stopped listening on port 54888
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633093255181	geckodriver	INFO	Listening on 127.0.0.1:61240
+1633093258224	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilevAZcmV"
+1633093258504	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilevAZcmV\\search.json.mozlz4", (void 0)))
+1633093260165	Marionette	INFO	Listening on port 51771
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633093260261	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633093270651	Marionette	INFO	Stopped listening on port 51771
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633098003565	geckodriver	INFO	Listening on 127.0.0.1:50197
+1633098006631	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilefLk8ac"
+1633098006924	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilefLk8ac\\search.json.mozlz4", (void 0)))
+1633098008516	Marionette	INFO	Listening on port 62390
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633098008697	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633098008705	Marionette	INFO	Stopped listening on port 62390
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  2
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633098009182	geckodriver	INFO	Listening on 127.0.0.1:50827
+1633098012266	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileCgf7cv"
+1633098012539	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileCgf7cv\\search.json.mozlz4", (void 0)))
+1633098014089	Marionette	INFO	Listening on port 51759
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633098014325	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633098014422	Marionette	INFO	Stopped listening on port 51759
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633098014907	geckodriver	INFO	Listening on 127.0.0.1:54346
+1633098017961	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilekS8BBI"
+1633098018271	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilekS8BBI\\search.json.mozlz4", (void 0)))
+1633098020099	Marionette	INFO	Listening on port 64623
+1633098020123	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633098020740	Marionette	INFO	Stopped listening on port 64623
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  2
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633098021328	geckodriver	INFO	Listening on 127.0.0.1:64542
+1633098024407	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileEKoZcN"
+1633098024679	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileEKoZcN\\search.json.mozlz4", (void 0)))
+1633098026673	Marionette	INFO	Listening on port 64550
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633098027060	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633098027719	Marionette	INFO	Stopped listening on port 64550
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633100404415	geckodriver	INFO	Listening on 127.0.0.1:57571
+1633100407472	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileIIj2BW"
+1633100407760	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileIIj2BW\\search.json.mozlz4", (void 0)))
+1633100409409	Marionette	INFO	Listening on port 61315
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633100409509	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633100409620	Marionette	INFO	Stopped listening on port 61315
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633100410105	geckodriver	INFO	Listening on 127.0.0.1:51011
+1633100413155	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileKhBQ3Z"
+1633100413442	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileKhBQ3Z\\search.json.mozlz4", (void 0)))
+1633100415268	Marionette	INFO	Listening on port 51019
+1633100415299	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633100415388	Marionette	INFO	Stopped listening on port 51019
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+[Parent 10964, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633100415863	geckodriver	INFO	Listening on 127.0.0.1:58028
+1633100418933	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile7zLi2g"
+1633100419201	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile7zLi2g\\search.json.mozlz4", (void 0)))
+1633100420770	Marionette	INFO	Listening on port 61634
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633100420986	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633100421046	Marionette	INFO	Stopped listening on port 61634
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633100563999	geckodriver	INFO	Listening on 127.0.0.1:59728
+1633100567075	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilentZbSr"
+1633100567343	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilentZbSr\\search.json.mozlz4", (void 0)))
+1633100568963	Marionette	INFO	Listening on port 55776
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633100569112	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633100569792	Marionette	INFO	Stopped listening on port 55776
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633100570275	geckodriver	INFO	Listening on 127.0.0.1:58489
+1633100573315	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileg6fgcA"
+1633100573581	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileg6fgcA\\search.json.mozlz4", (void 0)))
+1633100574969	Marionette	INFO	Listening on port 62157
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633100575360	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633100575438	Marionette	INFO	Stopped listening on port 62157
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633100575899	geckodriver	INFO	Listening on 127.0.0.1:56314
+1633100578963	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileAjYvZS"
+1633100579226	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileAjYvZS\\search.json.mozlz4", (void 0)))
+1633100580755	Marionette	INFO	Listening on port 62460
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633100581012	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633100581648	Marionette	INFO	Stopped listening on port 62460
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633100582148	geckodriver	INFO	Listening on 127.0.0.1:49587
+1633100585234	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile5fmC12"
+1633100585500	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile5fmC12\\search.json.mozlz4", (void 0)))
+1633100587052	Marionette	INFO	Listening on port 50299
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633100587277	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633100587946	Marionette	INFO	Stopped listening on port 50299
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633106315484	geckodriver	INFO	Listening on 127.0.0.1:60363
+1633106318555	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileJCDttW"
+1633106318793	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileJCDttW\\search.json.mozlz4", (void 0)))
+1633106320335	Marionette	INFO	Listening on port 54465
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633106320593	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633106321278	Marionette	INFO	Stopped listening on port 54465
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633106321785	geckodriver	INFO	Listening on 127.0.0.1:61417
+1633106324865	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilegSBZXL"
+1633106325096	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilegSBZXL\\search.json.mozlz4", (void 0)))
+1633106326599	Marionette	INFO	Listening on port 52714
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633106326918	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633106327006	Marionette	INFO	Stopped listening on port 52714
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633106327519	geckodriver	INFO	Listening on 127.0.0.1:59179
+1633106330579	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileN0N8aQ"
+1633106330809	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileN0N8aQ\\search.json.mozlz4", (void 0)))
+1633106332488	Marionette	INFO	Listening on port 60088
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633106332620	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633106333238	Marionette	INFO	Stopped listening on port 60088
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633106333734	geckodriver	INFO	Listening on 127.0.0.1:58208
+1633106336799	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilegMNbt5"
+1633106337036	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilegMNbt5\\search.json.mozlz4", (void 0)))
+1633106338570	Marionette	INFO	Listening on port 58216
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633106338839	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633106339484	Marionette	INFO	Stopped listening on port 58216
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633107188997	geckodriver	INFO	Listening on 127.0.0.1:61498
+1633107192027	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileSRmraY"
+1633107192263	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileSRmraY\\search.json.mozlz4", (void 0)))
+1633107193824	Marionette	INFO	Listening on port 58103
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107194087	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633107194771	Marionette	INFO	Stopped listening on port 58103
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633107195269	geckodriver	INFO	Listening on 127.0.0.1:58851
+1633107198340	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilevqKTZq"
+1633107198582	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilevqKTZq\\search.json.mozlz4", (void 0)))
+1633107200084	Marionette	INFO	Listening on port 61031
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107200377	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633107200462	Marionette	INFO	Stopped listening on port 61031
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633107200941	geckodriver	INFO	Listening on 127.0.0.1:51045
+1633107204019	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilerACeQ9"
+1633107204264	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilerACeQ9\\search.json.mozlz4", (void 0)))
+1633107205774	Marionette	INFO	Listening on port 61738
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107206048	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633107206660	Marionette	INFO	Stopped listening on port 61738
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633107207131	geckodriver	INFO	Listening on 127.0.0.1:50301
+1633107210191	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileOwhQMf"
+1633107210419	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileOwhQMf\\search.json.mozlz4", (void 0)))
+1633107211941	Marionette	INFO	Listening on port 54929
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107212241	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633107212872	Marionette	INFO	Stopped listening on port 54929
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 2920, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+1633107383508	geckodriver	INFO	Listening on 127.0.0.1:64824
+1633107386575	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilelVmrAC"
+1633107386803	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilelVmrAC\\search.json.mozlz4", (void 0)))
+1633107388312	Marionette	INFO	Listening on port 58432
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107388619	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633107389423	Marionette	INFO	Stopped listening on port 58432
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633107389933	geckodriver	INFO	Listening on 127.0.0.1:50733
+1633107393009	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileAJ9j1z"
+1633107393238	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileAJ9j1z\\search.json.mozlz4", (void 0)))
+1633107394787	Marionette	INFO	Listening on port 51398
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107395057	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633107395147	Marionette	INFO	Stopped listening on port 51398
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: services.settings: main/partitioning-exempt-urls sync interrupted by shutdown
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633107395618	geckodriver	INFO	Listening on 127.0.0.1:54071
+1633107398672	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileGB5G3p"
+1633107398916	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileGB5G3p\\search.json.mozlz4", (void 0)))
+1633107400444	Marionette	INFO	Listening on port 56420
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107400733	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633107401350	Marionette	INFO	Stopped listening on port 56420
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633107401845	geckodriver	INFO	Listening on 127.0.0.1:51809
+1633107404926	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile8h5jiC"
+1633107405165	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile8h5jiC\\search.json.mozlz4", (void 0)))
+1633107406673	Marionette	INFO	Listening on port 54590
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107406979	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633107407623	Marionette	INFO	Stopped listening on port 54590
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633107950784	geckodriver	INFO	Listening on 127.0.0.1:60845
+1633107953812	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileIGbL6g"
+1633107954046	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileIGbL6g\\search.json.mozlz4", (void 0)))
+1633107955533	Marionette	INFO	Listening on port 62004
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107955855	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633107956665	Marionette	INFO	Stopped listening on port 62004
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 1440, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633107957181	geckodriver	INFO	Listening on 127.0.0.1:49831
+1633107960263	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofiletEKAOi"
+1633107960494	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofiletEKAOi\\search.json.mozlz4", (void 0)))
+1633107962024	Marionette	INFO	Listening on port 49849
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107962303	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1633107962399	Marionette	INFO	Stopped listening on port 49849
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633107962889	geckodriver	INFO	Listening on 127.0.0.1:61840
+1633107965919	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilepdPE9t"
+1633107966155	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilepdPE9t\\search.json.mozlz4", (void 0)))
+1633107967839	Marionette	INFO	Listening on port 54829
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107967966	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633107968580	Marionette	INFO	Stopped listening on port 54829
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  2
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633107969055	geckodriver	INFO	Listening on 127.0.0.1:53452
+1633107972116	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilesh1IM1"
+1633107972353	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilesh1IM1\\search.json.mozlz4", (void 0)))
+1633107974043	Marionette	INFO	Listening on port 52974
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633107974166	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633107974813	Marionette	INFO	Stopped listening on port 52974
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633108000707	geckodriver	INFO	Listening on 127.0.0.1:51127
+1633108003790	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileBAj2aB"
+1633108004022	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileBAj2aB\\search.json.mozlz4", (void 0)))
+1633108005537	Marionette	INFO	Listening on port 62670
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108005832	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108006646	Marionette	INFO	Stopped listening on port 62670
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633108007143	geckodriver	INFO	Listening on 127.0.0.1:60368
+1633108010177	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilemkdHeT"
+1633108010408	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilemkdHeT\\search.json.mozlz4", (void 0)))
+1633108011935	Marionette	INFO	Listening on port 56075
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108012203	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108012839	Marionette	INFO	Stopped listening on port 56075
+console.error: PushServiceWebSocket: 
+  _beginWSSetup: Not in shutdown state! Current state
+  2
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633108013344	geckodriver	INFO	Listening on 127.0.0.1:61539
+1633108016386	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileykqCqj"
+1633108016616	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileykqCqj\\search.json.mozlz4", (void 0)))
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108018089	Marionette	INFO	Listening on port 61758
+1633108018434	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108019053	Marionette	INFO	Stopped listening on port 61758
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633108019546	geckodriver	INFO	Listening on 127.0.0.1:61808
+1633108022616	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileIHUDL5"
+1633108022848	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileIHUDL5\\search.json.mozlz4", (void 0)))
+1633108024374	Marionette	INFO	Listening on port 58012
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108024655	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108025289	Marionette	INFO	Stopped listening on port 58012
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633108234107	geckodriver	INFO	Listening on 127.0.0.1:61083
+1633108237178	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileq4ZHve"
+1633108237408	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileq4ZHve\\search.json.mozlz4", (void 0)))
+1633108239044	Marionette	INFO	Listening on port 57229
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108239224	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108240045	Marionette	INFO	Stopped listening on port 57229
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633108240541	geckodriver	INFO	Listening on 127.0.0.1:58679
+1633108243565	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileTk9jBQ"
+1633108243798	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileTk9jBQ\\search.json.mozlz4", (void 0)))
+1633108245332	Marionette	INFO	Listening on port 53075
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108245631	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108246281	Marionette	INFO	Stopped listening on port 53075
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633108246792	geckodriver	INFO	Listening on 127.0.0.1:54899
+1633108249809	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileIWDVbL"
+1633108250043	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileIWDVbL\\search.json.mozlz4", (void 0)))
+1633108251556	Marionette	INFO	Listening on port 64623
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108251857	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108252472	Marionette	INFO	Stopped listening on port 64623
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633108252966	geckodriver	INFO	Listening on 127.0.0.1:61102
+1633108256022	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileAZZO1h"
+1633108256277	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileAZZO1h\\search.json.mozlz4", (void 0)))
+1633108257797	Marionette	INFO	Listening on port 65373
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108258067	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108258701	Marionette	INFO	Stopped listening on port 65373
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633108282551	geckodriver	INFO	Listening on 127.0.0.1:58236
+1633108285582	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileT4fBq6"
+1633108285815	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileT4fBq6\\search.json.mozlz4", (void 0)))
+1633108287396	Marionette	INFO	Listening on port 53306
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108287650	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108288977	Marionette	INFO	Stopped listening on port 53306
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633108289480	geckodriver	INFO	Listening on 127.0.0.1:58499
+1633108292550	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileDF4aDd"
+1633108292790	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileDF4aDd\\search.json.mozlz4", (void 0)))
+1633108294363	Marionette	INFO	Listening on port 53819
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108294610	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108295279	Marionette	INFO	Stopped listening on port 53819
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1633108295766	geckodriver	INFO	Listening on 127.0.0.1:64847
+1633108298819	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile2C7WjU"
+1633108299056	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile2C7WjU\\search.json.mozlz4", (void 0)))
+1633108300740	Marionette	INFO	Listening on port 56253
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108300865	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108301499	Marionette	INFO	Stopped listening on port 56253
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633108302009	geckodriver	INFO	Listening on 127.0.0.1:61197
+1633108305062	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileuU4bPB"
+1633108305295	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileuU4bPB\\search.json.mozlz4", (void 0)))
+1633108306822	Marionette	INFO	Listening on port 59368
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633108307122	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633108307792	Marionette	INFO	Stopped listening on port 59368
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633110977416	geckodriver	INFO	Listening on 127.0.0.1:51814
+1633110980459	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilekOkIyj"
+1633110980707	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilekOkIyj\\search.json.mozlz4", (void 0)))
+1633110982256	Marionette	INFO	Listening on port 64958
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633110982505	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633110983314	Marionette	INFO	Stopped listening on port 64958
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633110983822	geckodriver	INFO	Listening on 127.0.0.1:62400
+1633110986862	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilezcHEVg"
+1633110987096	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilezcHEVg\\search.json.mozlz4", (void 0)))
+1633110988639	Marionette	INFO	Listening on port 62408
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633110988911	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633110989573	Marionette	INFO	Stopped listening on port 62408
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633110990090	geckodriver	INFO	Listening on 127.0.0.1:53935
+1633110993140	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileKB9fe8"
+1633110993370	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileKB9fe8\\search.json.mozlz4", (void 0)))
+1633110994902	Marionette	INFO	Listening on port 63670
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633110995211	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633110995824	Marionette	INFO	Stopped listening on port 63670
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633110996318	geckodriver	INFO	Listening on 127.0.0.1:52852
+1633110999352	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileczSRW0"
+1633110999598	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileczSRW0\\search.json.mozlz4", (void 0)))
+1633111001345	Marionette	INFO	Listening on port 63991
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633111001410	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633111002042	Marionette	INFO	Stopped listening on port 63991
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633117376661	geckodriver	INFO	Listening on 127.0.0.1:54812
+1633117379720	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileCaN5MU"
+1633117379973	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileCaN5MU\\search.json.mozlz4", (void 0)))
+1633117381651	Marionette	INFO	Listening on port 57949
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633117381761	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633117382607	Marionette	INFO	Stopped listening on port 57949
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 13640, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633117383110	geckodriver	INFO	Listening on 127.0.0.1:52934
+1633117386156	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilenzYRZ9"
+1633117386397	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilenzYRZ9\\search.json.mozlz4", (void 0)))
+1633117388190	Marionette	INFO	Listening on port 58229
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633117388306	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633117388958	Marionette	INFO	Stopped listening on port 58229
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633117389460	geckodriver	INFO	Listening on 127.0.0.1:56094
+1633117392510	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile21DXXW"
+1633117392750	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofile21DXXW\\search.json.mozlz4", (void 0)))
+1633117394337	Marionette	INFO	Listening on port 49355
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633117394563	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633117395197	Marionette	INFO	Stopped listening on port 49355
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633117395814	geckodriver	INFO	Listening on 127.0.0.1:58686
+1633117398847	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileOz1wK1"
+1633117399088	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileOz1wK1\\search.json.mozlz4", (void 0)))
+1633117400678	Marionette	INFO	Listening on port 59331
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633117400906	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633117401551	Marionette	INFO	Stopped listening on port 59331
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633149839985	geckodriver	INFO	Listening on 127.0.0.1:55043
+1633149843021	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileKUyheR"
+1633149843270	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileKUyheR\\search.json.mozlz4", (void 0)))
+1633149844834	Marionette	INFO	Listening on port 65403
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633149845038	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633149845853	Marionette	INFO	Stopped listening on port 65403
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633149846441	geckodriver	INFO	Listening on 127.0.0.1:65422
+1633149849477	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileuRmybV"
+1633149849707	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileuRmybV\\search.json.mozlz4", (void 0)))
+1633149851218	Marionette	INFO	Listening on port 55400
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633149851491	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633149852118	Marionette	INFO	Stopped listening on port 55400
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1633149852700	geckodriver	INFO	Listening on 127.0.0.1:57449
+1633149855742	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilebNGNf6"
+1633149855981	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofilebNGNf6\\search.json.mozlz4", (void 0)))
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633149857534	Marionette	INFO	Listening on port 52356
+1633149857758	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633149858365	Marionette	INFO	Stopped listening on port 52356
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 20888, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1633149858841	geckodriver	INFO	Listening on 127.0.0.1:63024
+1633149861873	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileT6X2UZ"
+1633149862117	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\JB\\AppData\\Local\\Temp\\rust_mozprofileT6X2UZ\\search.json.mozlz4", (void 0)))
+1633149863643	Marionette	INFO	Listening on port 55781
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: / is not a valid URL.
+1633149863888	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1633149864517	Marionette	INFO	Stopped listening on port 55781
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
