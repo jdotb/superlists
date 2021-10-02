@@ -552,12 +552,14 @@ nginx
     [B]  We also must have the correct python installed on the server, and last checked, that's found from
             ppa:deadsnakes/ppa
 
-** If originally using Windows, and you have setup a VM on, say, Oracle's VirtualBox - you can share the folder you've
+dep!
+    If originally using Windows, and you have setup a VM on, say, Oracle's VirtualBox - you can share the folder you've
     been working in to VBox.
         1. From the menu at the top - select Devices > Shared Folders > Shared Folder Settings
         2. Find the folder with a +, then find 'YourSourceRoot'
         3. Add the folder, select a mount point, then select 'make permanent'
-        4. If the mount doesn't work (mine didn't) - you can mount manually this way (from terminal)
+
+dep!    4. If the mount doesn't work (mine didn't) - you can mount manually this way (from terminal)
 
             $  sharename="whatever.you.want.to.call.it";
             $  sudo mkdir /mnt/$sharename
@@ -585,7 +587,23 @@ nginx
 
     3. mkdirs for live and staging pages
     4. from the ubuntu-vm, you'll need to get your files onto the server by using rsync
-        ** I later learned that this is much easier with git
+
+        ** I later learned that this is much easier with git, DON'T USE RSYNC
 
             USER@droplet-name$  rsync -avz -e 'ssh' /path/to/local/dir USER@remotehost:/path/to/remote/dir
+
+**************
+> A lot of the procedure above was done before I knew what I was doing (I still don't know, but I have a much better idea)
+
+> The easiest way to do this is to just setup nginx on the remote@server as a non-root user (gametime@superlists-app)
+
+    /home/gametime/sites/superlists-stage.com/
+    /home/gametime/sites/superlists-live.com/
+
+    gametime@superlists-app: echo HOSTNAME=jdotbdotb.com
+    gametime@superlists-app: echo SITENAME=stage-superlists.$hostname.com
+    gametime@superlists-app: sudo mkdir -p ~/home/gametime/sites/$SITENAME/database
+    gametime@superlists-app: sudo mkdir -p ~/home/gametime/sites/$SITENAME/static
+    gametime@superlists-app: sudo mkdir -p ~/home/gametime/sites/$SITENAME/virtualenv
+    gametime@superlists-app: sudo git clone https://www.github.com/jdotb/superlists.git ~/gametime/sites/$SITENAME/source
 

@@ -7,7 +7,7 @@ import time
 import os
 import unittest
 
-STAGING_SERVER = "165.227.200.9"
+STAGING_SERVER = stage.jdotbdotb.com
 MAX_WAIT = 10
 
 
