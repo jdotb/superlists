@@ -25,7 +25,9 @@ SECRET_KEY = '*pix_db&&yyuu)r*4k_ktn$rxe7h46&&y-h+aj9@9ft9qf+r2)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+TEMPLATE_DEBUG = DEBUG
+
+ALLOWED_HOSTS = ['stage-superlists.jdotbdotb.com', 'stage.jdotbdotb.com']
 
 # Application definition
 
@@ -76,9 +78,10 @@ WSGI_APPLICATION = 'superlists.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, '/home/gametime/superlists/db/db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, '../db/db.sqlite3'),
     }
 }
+
 
 
 # Password validation
@@ -117,5 +120,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/lists/'
-STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../static/lists'))
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../static'))
+
