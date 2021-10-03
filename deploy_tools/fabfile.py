@@ -3,8 +3,8 @@ from fabric.api import env, local, run
 import random
 
 REPO_URL = 'https://github.com/jdotb/superlists.git'
-env.hosts = ['jdotbdotb.com']
-env.user = ['gametime']
+# env.hosts = ['jdotbdotb.com']
+# env.user = ['gametime']
 
 def deploy():
     site_folder = f'/home/{env.user}/sites/{env.host}'
