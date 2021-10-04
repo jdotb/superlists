@@ -7,7 +7,6 @@ user = env.user
 host = env.host
 
 
-
 def deploy():
     site_folder = '/home/'+env.user+'/sites/'+ env.host
     source_folder = site_folder + '/source'
