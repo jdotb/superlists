@@ -2,3 +2,4 @@
 geckodriver.log
 lists/__pycache__/
 superlists/__pycache__/
+.pyc
