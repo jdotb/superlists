@@ -39,3 +39,14 @@ class FunctionalTest(StaticLiveServerTestCase):
                     # Escape #2: If we get here, code kept raising exceptions until we exceeded our MAX_WAIT
                     raise e
                 time.sleep(0.5)
+
+    def wait_for(self, fn):
+        start_time = time.time()
+        while True:
+            try:
+                return fn()     # if no exception raised, exit and return function
+            except (AssertionError, WebDriverException) as e:
+                if time.time() - start_time > MAX_WAIT:
+                    # Escape #2: If we get here, code kept raising exceptions until we exceeded our MAX_WAIT
+                    raise e
+                time.sleep(0.5)
