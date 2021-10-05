@@ -1,12 +1,11 @@
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from unittest import skip
 from .base import FunctionalTest
 
 
 class ItemValidationTest(FunctionalTest):
 
-    @skip
+
     def test_cannot_add_empty_list_items(self):
         # # James goes to the home page and accidentally tries to submit an empty list item
         ## - he hits ENTER on the empty input box
