@@ -3,12 +3,11 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
-MAX_WAIT = 10
-
 
 class NewVisitorTest(FunctionalTest):
+
     def test_can_start_a_list_for_one_user(self):
-        self.browser.get(self.live_server_url)
+        self.browser.get(self.server_url)
 
         ## He notices the page title and header mention to-do lists
         self.assertIn('To-Do', self.browser.title)
@@ -17,7 +16,8 @@ class NewVisitorTest(FunctionalTest):
 
         ## He is invited to enter a to-do item ##
         inputbox = self.browser.find_element(By.ID, 'id_new_item')
-        self.assertEqual(inputbox.get_attribute('placeholder'), 'Enter a to-do item')
+        self.assertEqual(inputbox.get_attribute('placeholder'),
+                         'Enter a to-do item')
 
         ## He types "Buy new drone" into the text box (James wants to pilot a drone)
         inputbox.send_keys('Buy new drone')
@@ -38,8 +38,8 @@ class NewVisitorTest(FunctionalTest):
         inputbox.send_keys(Keys.ENTER)
 
         ## The page refreshes and now he sees both of the items he's added to the list
-        self.wait_for_row_in_list_table('1: Buy new drone')
         self.wait_for_row_in_list_table('2: Find a cool place to fly new drone')
+        self.wait_for_row_in_list_table('1: Buy new drone')
 
         # Satisfied that his to-do list is safe, he goes about his day
 

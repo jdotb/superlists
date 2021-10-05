@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.urlresolvers import reverse
 
 #   #   #   #   #   #   #   ##   #   #   #   #   #   #   #
 # This gets our test as far as:
@@ -37,7 +38,8 @@ class Item(models.Model):
 #       hasn't remembered the .text attribute.
 #   #   #   #   #   #   #   ##   #   #   #   #   #   #   #
 class List(models.Model):
-    pass
+    def get_absolute_url(self):
+        return reverse('view_list', args=[self.id])
 
 class Item(models.Model):
     text = models.TextField(default='')

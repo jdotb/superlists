@@ -5,16 +5,15 @@ from .base import FunctionalTest
 
 class ItemValidationTest(FunctionalTest):
 
-
     def test_cannot_add_empty_list_items(self):
         # # James goes to the home page and accidentally tries to submit an empty list item
         ## - he hits ENTER on the empty input box
-        self.browser.get(self.live_server_url)
+        self.browser.get(self.server_url)
         self.browser.find_element_by_id('id_new_item').send_keys(Keys.ENTER)
 
         ## The homepage refreshes and shows an error message saying list items can't be blank
         self.wait_for(lambda: self.assertEqual(
-            self.browser.find_element(By.CSS_SELECTOR,'.has-error').text,
+            self.browser.find_element(By.CSS_SELECTOR, '.has-error').text,
             "Empty list items aren't allowed"
         ))
         ## He tries again with some text, and it now works
