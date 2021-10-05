@@ -1,5 +1,6 @@
-/__pycache__/
+*/__pycache__/
 geckodriver.log
-lists/__pycache__/
+lists/tests/__pycache__/
 superlists/__pycache__/
-.pyc
+functional_tests/__pycache__/
+*.pyc
