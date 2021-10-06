@@ -1,0 +1,609 @@
+[9/29/21]
+________________
+* I began this project a couple of weeks ago, but I didn't start at the beginning.  When I came back to it,
+    I forgot where I left off, and didn't really remember what I was doing when I stopped...
+    so I decided I'd just start over from the beginning and keep a much more methodical journal.
+
+
+1. Project set-up and Django environment deployment.
+
+2. Git setup and first commit.
+
+3. User story created - functional_tests 'expected fails'
+
+4. Unit Tests vs Functional Tests:
+    _Functional tests_  tests the app's function from user's POV
+    _Unit tests_        tests the application from the dev's POV
+
+5. TDD approach thus far:
+    a. Start by writing functional test that describes the new functionality from user's POV
+
+    b. Once we have a FAILING functional test, begin to brainstorm how to write CODE to get it to PASS
+        > now write unit tests to define how we want our code to behave.
+        > each line of production code we write should be tested by (at least) one unit test
+
+    c. Once we have FAILING unit test, write small amount of application code, just to get unit test to pass.
+
+    d. Now rerun functional tests and see if they pass, or at least show progress towards passing.  Use info to guide
+        next steps - either write new unit tests, then new code, etc.
+
+6. TDD methodology requires small, incremental changes to code - after creating unit test under /lists/tests.py we ran
+    python manage.py test to find an expected failure (which is the next best thing to a passing test).  Now that we
+    have both a failing unit test and a failing functional test - the Testing Goat give his blessing to code away.
+
+7. We have edited tests.py to look for 'home_page' then run test - ImportError: cannot import name 'home_page'
+
+    So then, we went to views.py and added home_page = None, and reran the test...
+        ERROR: django.urls.exceptions.Resolver404: {'path': '.'}
+            * The test failure is telling us that we need a URL mapping (urls.py)
+8. In urls.py we remove the admin, import views, and add (r'^$', views.home_page, name='home') and rerun the test
+        PASS! - make commits
+
+9.  Next, make changes to unit test by adding some checks (second test).
+
+        TDD unit-test/code cycle:
+            1. In terminal, run unit tests and see how they fail
+            2. In the editor, make minimal code change to address the current test failure, rerun test.
+            3. Repeat
+
+10. Now run functional test and check output.  FAILED? But, it's just our reminder to finish.
+
+        |TDD Principle|
+       __* Whenever you leave the project to take a break, just rerun the last test to figure out where you left off *__
+
+        > Our functional_test.py told us to 'Finish the test!', so we will.
+
+11. Resuming functional_test.py, checks were added.
+
+        |TDD Principle #2|
+            __* Don't test constants.  Unit tests should test logic, flow control, and configuration *__
+
+    * The hardcoded html in views.py isn't great, should use templates instead (aka refactor).
+    a. Created directory called 'templates' under lists (lists/templates) - then created home.html
+    b. Must add 'lists' to INSTALLED_APPS (superlists/superlists/settings.py)
+
+12. After some test cleanup and refactoring the hardcoded html as a template, need to use Django's render_to_string
+    function which will allow rendering of the home.html file as a string so that tests can be run.
+
+    > Imported Django Test Client and used the built-in 'assertTemplateUsed'
+
+    > Instead of manually creating an HttpRequest object and calling the view function directly, use self.client.get('URL')
+
+    > Remove old test_root_url_resolves since this is tested by Django Test Client
+
+    __* TIP (refactoring): When refactoring, work on either the code or the tests, but not both at once *__
+        * (It's also a good idea to commit after a refactor)
+
+13. With unit test passing, we need to address the failing functional_test.py
+
+    Need to add:
+        a. <h1> (then test)
+        b. input element with id="id_new_item" and placeholder text (then test)
+        c. table "id_list_table" (then test)
+
+    * The remaining failure is vague, added a failure message to the assertTrue method
+
+    COMMIT
+
+14. Note:
+        >> Functional tests are the ultimate judge of whether your app works or not <<
+        >> Unit tests are a tool to help you along the way <<
+
+15. Saving user data
+        > A form needs to be added with a POST method, add it and test.
+        > Failure - returned 'forbidden' due to no CSRF token - add with {% csrf_token %}
+        > rerunning functional_tests.py gives us the expected failure.
+        > Still need to config an action= attribute in the form, and setup view to handle POSTs
+        > Add POST submission to table
+        > {{ ... }} includes python object as string
+
+        Note: unit-test/code cycle sometimes known as Red, Green, Refactor
+            - Write failing test (red)
+            - Write simple code to get it to pass (Green, even if you have to 'cheat')
+            - Refactor
+
+        > See EDIT 1 in functional_test.py (ln 44)
+        > still failing... so we have to cheat by adding the 1 manually (will revisit this issue later)
+
+        <tr><td>1:  {{ new_item_text }}</td></tr>
+                ^
+    > wrapping up, we see our self.fail('Finish the test!')
+
+16. Return to fix our 'cheat'
+    > Added tests to check our form data and elements, but we're still failing (still cheating)
+    > Follow the DRY (don't repeat yourself) and 3 strikes and refactor principles.
+        > Three occurrences of code block begets a refactor
+        > before refactor, COMMIT
+
+    > Need to fix the issue of only being able to handle 1 list item in table
+    > In functional test, we can write a helper function and not worry about test execution because only
+        functions that begin with test will be executed
+    > Created helper function to CHECK the list items, but they aren't persisting yet, but the test works.
+
+    > after refactor, COMMIT!
+
+
+17. Django ORM and our first model
+
+    ORM - Object-relational-mapper is a layer of abstraction for data stored in a database with tables, rows, and cols.
+        > Allows familiar object-oriented metaphors which work well with code.
+        > Classes map to database tables
+        > Attributes map to columns
+        > Individual instance of the class represents a row of data in the db
+
+    > In lists/tests.py create new class ItemModelTest
+        >> To create a new record in the db, create an object, assign attribs, and call .save()
+        >> Can also query API via class attrib .objects | can also use .all() for all records for table
+        >> Results returns as list-like object called QuerySet which can be further queried
+
+    > Added class to models.py and now we have passing test lists
+    > COMMIT!
+    > Now, on to saving the POST to the db
+
+18. Posts/redirect/views
+    > While testing, seems POST test is getting too long?
+        >> TO-DO:
+        >> Don't save blank items for each request (fixed)
+        >> Display multiple items in table
+        >> Support more than one list
+
+    ** A (view) function has two jobs:
+        1. Process user input
+        2. Return an appropriate response
+
+    ** ALWAYS REDIRECT AFTER A POST!
+        > Instead of rendering a response with the item in it, redirect back to home
+
+    > Implemented the redirect, now need to test for the handling
+    > Made changes and see the correct # of passing tests (5)
+
+    > TO-DO (cont)
+        >> Address display multiple items in the table (create test to check)
+        >> Can use Django template syntax to loop through lists
+        >> Use {% for item in items %} in home.html
+
+        > Add the loop to home.html, passed from views
+        > unit tests passing, now test functional
+            * FAIL
+        > 'To-Do' not found in 'OperationalError at /' (db error)
+            > The reason the unit tests passed is due to Django making a special 'test db' for the unit tests
+        > Need to setup db using this:
+            $ python manage.py migrate
+
+        > SUCESS! The page now renders! Test again.
+            * FAIL
+            - Numbering in the list is still wonky
+            - Can use another Django template tag: forloop.counter
+                    {% for item in items %}
+                        <tr><td>{{ forloop.counter }}: {{ item.text }} </td></tr>
+                    {% endfor %}
+
+        > Test is passing, but page is displaying dupes of the list items.
+            Item 1
+            Item 2
+            Item 1
+            Item 2
+            ...
+        > Need to manually rebuilt db (optional)
+
+ ----------------
+||    RECAP      ||
+ ----------------
+	>   Have a form set up to add new items to the list using POST.
+
+	>   Set up a simple model in the database to save list items.
+
+	>   Learned about creating database migrations, both for the test database
+	    (where they’re applying automatically) and for the real database (have
+	    to apply them manually).
+
+	>   Used first couple of Django template tags:
+		    {% csrf_token %}
+		    {% for ... endfor %} loop.
+
+	>   Used at least three different FT debugging techniques:
+		    - in-line print statements
+		    - time.sleeps
+		    - and improving the error messages
+
+
+===========================================================================================
+
+> Test runs are interfering with each other - functional tests are leaving items in the db, causing duplicate lists,
+    which ultimatly caused the tests to fail.
+
+    >> Solution 1: 'roll our own' and place in setUP and tearDown methods
+
+    >> Solution 2: Django's LiveServerTestCase
+
+            - test db created so we don't have dupes
+            - test runner finds files beginning with 'test'
+
+    >> Solution 2 is best.
+
+    >> Let's implement solution 2
+
+        >>> make a folder for functional tests (so it looks like an app)
+            1. add an __init__.py to make this folder a package
+            2. move functional_tests.py to functional_tests folder
+            3. rename functional_tests.py to tests.py
+            4. use git mv so that vcs recognizes the change
+
+            5. Now, instead of running:
+                $ python functional_tests.py
+            6.  run:
+                $ python manage.py functional_tests
+
+            7. Edit new functional_tests/tests.py, change NewVisitorTest class to use LiveServerTestCase
+
+            ** First run goes great, the only fail is our reminder to finish the test.
+            ** The old list items problem is also solved.
+
+            ** Now when we run:
+
+                $ python manage.py test
+
+                * BOTH the functional and unit tests are run!
+
+            ** To run just the unit tests:
+
+                $ python manage.py test lists
+
+    >> Still need to use better waits (not sleep)
+
+        >>> time.sleep(1) is an explicit wait, which could add up in larger tests
+        >>> implicit_wait (from Selenium) is buggy, and should be avoided
+        >>> need to change 'check_for_row_in_list_table' to 'wait_for_row_in_list_table' using polling/retry logic
+        >>> after this is implemented, need to intentionally break to check our logic
+
+            * self.assertIn('foo', [row.text for row in rows]) added and we get good failure message.
+            * Tests are working!
+            * make this change:
+                        try:
+                table = self.browser.find_element(By.ID, 'id_nothing')
+                                                               ^ change
+            * This time our exceptions are raised and our MAX_WAIT time is exceeded
+            * Tests are working!
+
+> Back to the issue that our design only allows for one global list
+
+    * Remember that we're aiming to push out a *minimum viable app* early and let design evolve gradually based on feedback
+
+    * What we want so far:
+        1. Each user should be able to store their own list
+        2. A list has several items in it, whose primary attribute is a descriptive text
+        3. We need to save lists from one visit to the next.
+            - we can give each user a unique URL for now
+
+        ** To get this working, we'll store the lists and their items in a db, each list will have a unique URL
+        ** We'll use a REST approach
+
+            > REST suggests we have a URL structure that matches our data structure:
+
+                # each list has its own url:
+
+                    /lists/<list identifier>            to view: [GET]
+
+                # create new list, special URL that accepts POST requests
+
+                    /lists/new
+
+                # To add new item to existing list, use seperate URL which we can send POST requests
+
+                    /lists/<list identifier>/add_item
+***** In summary (TO-DO list):
+        1. Adjust model so that items are associated with different lists
+        2. Add unique URL for each list
+        3. Add a URL for creating new list via POST
+        4. Add URLs for adding a new item to an existing list via POST
+
+        * REMEMBER TDD! We need to create TESTS first.
+
+        * We will begin by updating our 'user story' by adding a second user and make sure the list is at a unique URL
+
+> Implementing the new design
+    * Referring back to the TO-DO list and our failing test - item #2 is what needs to be addressed next since the
+        regexp is what's failing.
+
+        > The URL comes from the redirect after a POST - check out test_redirects_after_POST in lists/tests.py
+            and change the expected redirect location.
+
+        !! After these changes, both tests are failing since there is no /the-only-list-in-the-world/ and tests are failing
+            after trying to submit the first item because the list table can't be found
+                ** WE'VE INTRODUCED A REGRESSION!
+
+        > Edit tests.py to check that all items displayed
+            * replaced assertIn(response.content.decode()) with assertContains() <- method that knows how to deal with responses
+
+        > Our failing tests are telling us that the new URL doesn't exist yet - fix that by adding it to urls.py
+
+        > After fixing the URL, tests are still failing
+
+            AttributeError: module 'lists.views' has no attribute 'view_list'
+
+            * we know our url is at least being seen now, but not being seen just enough, need to edit views.py
+            * after some fixes, we get unit tests passing
+            * functional tests are getting to first item, but not second item
+                - Unit tests passing, so URLs and views are proper
+                - Home page displaying correct template and can handle POSTs
+                - The only-list-in-the-world knows how to display all items...but can't handle POST requests
+
+                * Adding the existing home page view fixes the issue
+                * all old functionality working again
+                * Red/Green/Refactor states since we're now GREEN, we need to clean up and refactor
+                    > We have two views:
+                        1. Home page
+                        2. Individual lists
+
+                        * home page no longer displays lists, so we can remove those tests
+                        * unit tests down to 6 items
+                        * we need a template for lists (list.html)...create that.
+                        * we will need to test to make sure the template is being used correctly
+
+> As far as the to-do list is concerned, we barely made much progress on item #2
+    * We need a new URL for adding new list items
+    * Add new test class for new list creation
+    ** After adding this test, failure tells us that we aren't saving to db and second failure tells us we haven't
+        built a URL for /lists/new yet
+
+> All the above fixed, and unit tests are passing! But our FT are failing...ANOTHER REGRESSION!
+    * The fails are test_can_start_a_list_for_one_user
+                    test_multiple_users_can_start_lists_at_different_urls
+                    * both failing to find element: [id='id_list_table']
+                    ** We haven't changed the forms in home.html and lists.html to point to new URL
+                    ** after the POST actions are fixed, we're back to working!
+                    ** COMMIT!
+
+> Model adjustment
+    * in tests.py we need to create a new List object, then assign each item to it by assigning it as its .list property.
+        Check that the list is saved, and also check that the two items have saved their relationship to the list.
+
+    * after making the List object relate to our Item object properly, we're back passing our unit tests.
+
+    * as of now, still creating a new list for each new item submission and still displaying all items as if they
+        belong to the same list.
+
+    * COMMIT!
+
+    ** Our to-do list is down to the very last item!  We just need to make each list have its own URL.
+
+> Each List should have Its Own URL
+
+    * The easiest identifier to use is the id from the db, change ListViewTest to test this
+        ** add List objects and populate them, then check their contents
+        ** when the tests are run, we get 404 since we haven't actually made the connection yet
+        ** when we update urls to take a param, we test, and fail - we haven't updated views to expect an arg yet.
+        ** back to our expected failure:
+
+            AssertionError: 1 != 0 : Response should not contain 'other list item 1'
+
+        ** We need to change views and have it choose which items to send to the template (change Items = objects.all())
+        ** Once we run tests again, another failure:
+
+            ValueError: invalid literal for int() with base 10: 'the-only-list-in-the-world'
+
+            > This makes sense since we're not using that anymore, but I don't know right away what's happening.
+            > We're failing under the test_redirects_after_POST test...so I'll start there.
+
+            * Changed the redirect to test for the new list and id, same error
+            * In views, changed the new_list to actually redirect using the correct URL
+            * Still failing, but now different:
+                AttributeError: 'function' object has no attribute 'id'
+                * Fixed typo, now passing unit tests - check FT
+                ** FT failing due to the fact that a new list is created for every single POST.
+                ** We can fix this by mapping a URL and a view when adding a new item to an existing list
+                    (/lists/<list_id>/add_item)
+
+            * Create a method for add_item (to existing list) using same schema as we've been using (add method in views, map URL)
+            * need to add a form method to add item to list in list.html template
+            * after all completed, tests ran and BOTH PASSING!
+            * need to refactor - but COMMIT FIRST!
+
+> Had to do a git reset, so I lost some notes.
+
+> We've finished up importing CSS (bootstrap) and adding blocks for our template inheritance
+    * Still need to map the static files in settings.py - actually this was already done when I went to do it!
+    * I've been gone for a few things, but they were completed.
+        1. Learned that the static files shouldn't be in the app repo, so that was moved to ../static
+        2. Had to define the static URL in settings.py
+        3. Learned that Django has a neat feature to gather up your static files:
+
+                $ manage.py collectstatic
+    * All of that has been completed and now...we're going to push to a live server environment
+
+> Deploying
+
+    * Some dangers to deployment:
+        1. Static files need special configs
+        2. The db needs special attention
+        3. Dependencies need to be on the server
+
+    * To address some of these:
+        1. Use a staging site on same infrastructre as production site
+        2. Functional tests a run against the staging stie
+        3. Add a venv to the server
+        4. Automated script deployment
+
+    ** Deployment procedure:
+
+    [A] I have created a droplet on digitalocean using Ubuntu 20.04
+            i) setup droplet
+nginx
+           ii) install nginx on droplet and start
+(start)
+                $ sudo nginx start
+
+                # To get the status #
+
+                $ systemctl status nginx
+
+                * Look for Active: active (running) - may be in green (mine was)
+
+|nginx|
+                - SERVER_IP = 165.227.200.9
+
+            iii) config firewall on droplet
+
+                $ sudo ufw app list
+
+                # Nginx Full
+                # Nginx HTTP
+                # Nginx HTTPS
+                # OpenSSH
+
+                ^^  brings up app profiles, should select the MOST restrictive, so we only need port 80
+
+|nginx|  - select Nginx HTTP (port 80) by doing:
+
+            $ sudo ufw allow 'Nginx HTTP'
+
+        - verify by typing:
+
+            $ sudo ufw status
+
+        iv) get server ip by:
+
+            $ curl -4 icanhazip.com
+
+            * The ip that is shown is the nginx server ip
+
+|nginx|
+        v) navigate to http://SERVER-IP in browser
+            * If you see the 'Welcome to nginx' message, you're all good
+
+        vi) Further nginx management:
+            $ sudo systemctl stop nginx         # stops webserver
+            $ sudo systemctl start nginx        # starts webserver
+            $ sudo systemctl restart nginx      # restarts webserver
+            $ sudo systemctl reload nginx       # use after config changes
+            $ sudo systemctl disable nginx      # disable system start
+            $ sudo systemctl enable nginx       # enable system start (default)
+
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|nginx|
+        vii) Nginx serves docs from /var/www/html by default, but to make server blocks:
+
+            ~ Can create server blocks to serve multiple sites from single server
+
+            1. create directory structure for my_domain
+                $ sudo mkdir -p /var/www/my_domain/html
+            2. assign ownership with $USER env var
+                $ sudo chown -R $USER:$USER /var/www/my_domain/html
+            3. to ensure owner RWE (755) permissions, and others RE
+                $ sudo chmod -R 755 /var/www/my_domain
+            4. make sample html
+                $ nano /var/www/my_domain/html/index.html
+
+                then add:
+                    <html>
+                        <head>
+                            <title>Welcome to your_domain!</title>
+                        </head>
+                        <body>
+                            <h1>Success!  The your_domain server block is working!</h1>
+                        </body>
+                    </html>
+
+                * in nano - CTRL+X then Y then ENTER saves
+|nginx|
+            5. to serve the content, must create server block with appropriate directives
+                    * /etc/nginx/sites-available/my_domain
+
+                $ sudo nano /etc/nginx/sites-available/my_domain
+
+                then paste:
+
+                        server {
+                            listen 80;
+                            listen [::]:80;
+
+                            root /var/www/my_domain/html;
+                            index index.html index.htm index.nginx-debian.html;
+
+                            server_name my_domain www.my_domain;
+
+                            location / {
+                                    try_files $uri $uri/ =404;
+                            }
+                        }
+|nginx|
+            6. To avoid potential hash bucket mem issues, need to adjust /etc/nginx/nginx.conf
+
+                $ sudo nano /etc/nginx/nginx.conf
+
+                FIND: server_names_hash_bucket_size
+                REMOVE: '#'
+
+                (to search in nano, use CTRL+w)
+
+                * save and close
+
+            7. test syntax
+
+                $ sudo nginx -t
+
+            8. Restart nginx
+
+                $ sudo systemctl restart nginx
+
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+|python|
+    [B]  We also must have the correct python installed on the server, and last checked, that's found from
+            ppa:deadsnakes/ppa
+
+dep!
+    If originally using Windows, and you have setup a VM on, say, Oracle's VirtualBox - you can share the folder you've
+    been working in to VBox.
+        1. From the menu at the top - select Devices > Shared Folders > Shared Folder Settings
+        2. Find the folder with a +, then find 'YourSourceRoot'
+        3. Add the folder, select a mount point, then select 'make permanent'
+
+dep!    4. If the mount doesn't work (mine didn't) - you can mount manually this way (from terminal)
+
+            $  sharename="whatever.you.want.to.call.it";
+            $  sudo mkdir /mnt/$sharename
+            $  sudo chmod 777 /mnt/$sharename
+            $  sudo mount -t vboxsf -o uid=1000,gid=1000 $sharename /mnt/$sharename
+            $  ln -s /mnt/$sharename $HOME/Desktop/$sharename
+
+** If using a digitalocean droplet (like I am) - you'll want to configure your DNS to point to some-name vs IP
+
+    *** To do this, you have to navigate to 'networking' and then add the droplet domain and configure the 'A' record
+
+    *** This is somewhat convoluted, so follow along:
+        1. For the first record ('A' record) - enter '@' - then 'Add record'
+        2. For the second record ('A' record) - enter 'www' - then 'Add record'
+
+** on ubuntu VM - login with ssh
+    1. (ssh-root) create new non-root user
+
+        $ makeuser USER
+                                (gametime:******)
+
+    2. (ssh-USER) ssh into droplet as non-root user
+
+            root@droplet-name$  ssh droplet-IP -l root
+
+    3. mkdirs for live and staging pages
+    4. from the ubuntu-vm, you'll need to get your files onto the server by using rsync
+
+        ** I later learned that this is much easier with git, DON'T USE RSYNC
+
+            USER@droplet-name$  rsync -avz -e 'ssh' /path/to/local/dir USER@remotehost:/path/to/remote/dir
+
+**************
+> A lot of the procedure above was done before I knew what I was doing (I still don't know, but I have a much better idea)
+
+> The easiest way to do this is to just setup nginx on the remote@server as a non-root user (gametime@superlists-app)
+
+    /home/gametime/sites/superlists-stage.com/
+    /home/gametime/sites/superlists-live.com/
+
+    gametime@superlists-app: echo HOSTNAME=jdotbdotb.com
+    gametime@superlists-app: echo SITENAME=stage-superlists.$hostname.com
+    gametime@superlists-app: sudo mkdir -p ~/home/gametime/sites/$SITENAME/database
+    gametime@superlists-app: sudo mkdir -p ~/home/gametime/sites/$SITENAME/static
+    gametime@superlists-app: sudo mkdir -p ~/home/gametime/sites/$SITENAME/virtualenv
+    gametime@superlists-app: sudo git clone https://www.github.com/jdotb/superlists.git ~/gametime/sites/$SITENAME/source
+
