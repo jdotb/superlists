@@ -45,6 +45,8 @@ class Item(models.Model):
     text = models.TextField(default='')
     list = models.ForeignKey(List, default=None)
 
+    class Meta:
+        unique_together = ('list', 'text')
 #   #   #   #   #   #   #   ##   #   #   #   #   #   #   #
 # The above produces 'no such column: list_item.text
 # This is because we've added another new field to our db, but didn't migrate.

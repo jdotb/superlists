@@ -14,6 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -26,7 +27,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = ['stage-superlists.jdotbdotb.com', 'stage.jdotbdotb.com']
+ALLOWED_HOSTS = ['jdotbdotb.com', 'live.jdotbdotb.com', 'live-superlists.jdotbdotb.com', 'stage-superlists.jdotbdotb.com', 'stage.jdotbdotb.com']
 
 # Application definition
 
@@ -76,7 +77,7 @@ WSGI_APPLICATION = 'superlists.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, '../db/db.sqlite3'),
+        'NAME': os.path.abspath(os.path.join(BASE_DIR, '../db/db.sqlite3')),
     }
 }
 
@@ -114,5 +115,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../static/lists'))
+STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../../static/lists'))
