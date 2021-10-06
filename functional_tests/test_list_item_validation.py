@@ -11,13 +11,16 @@ class ItemValidationTest(FunctionalTest):
         self.browser.get(self.server_url)
         self.get_item_input_box().send_keys(Keys.ENTER)
 
-        ## The homepage refreshes and shows an error message saying list items can't be blank
-        self.wait_for(lambda: self.assertEqual(
-            self.browser.find_element(By.CSS_SELECTOR, '.has-error').text,
-            "Empty list items aren't allowed"
-        ))
+        ## The browser intercepts the request, and does not load the list page
+        ## Instead of checking for our custom error message, we check the CSS pseudoselector :invalid
+        ## which the browser applies to any HTML5 input that has invalid input
+        self.wait_for(lambda: self.browser.find_element(By.CSS_SELECTOR,
+                                                        '#id_text:invalid'))
         ## He tries again with some text, and it now works
         self.get_item_input_box().send_keys('Buy cheese')
+        self.wait_for(lambda: self.browser.find_element(By.CSS_SELECTOR,
+                                                        '#id_text:valid'))
+
         self.get_item_input_box().send_keys(Keys.ENTER)
         self.wait_for_row_in_list_table('1: Buy cheese')
 
@@ -25,13 +28,14 @@ class ItemValidationTest(FunctionalTest):
         self.get_item_input_box().send_keys(Keys.ENTER)
 
         ## He receives a similar warning on the list page
-        self.wait_for(lambda: self.assertEqual(
-            self.browser.find_element(By.CSS_SELECTOR, '.has-error').text,
-            "Empty list items aren't allowed"
-        ))
+        self.wait_for_row_in_list_table('1: Buy cheese')
+        self.wait_for(lambda: self.browser.find_element(By.CSS_SELECTOR,
+                                                        '#id_text:invalid'))
 
         ## This can be corrected by filling in some text
         self.get_item_input_box().send_keys('Make lunch for tomorrow')
+        self.wait_for(lambda: self.browser.find_element(By.CSS_SELECTOR,
+                                                        '#id_text:valid'))
         self.get_item_input_box().send_keys(Keys.ENTER)
         self.wait_for_row_in_list_table('1: Buy cheese')
         self.wait_for_row_in_list_table('2: Make lunch for tomorrow')
