@@ -1,6 +1,7 @@
 from django.db import models
 from django.core.urlresolvers import reverse
 
+<<<<<<< HEAD
 #   #   #   #   #   #   #   ##   #   #   #   #   #   #   #
 # This gets our test as far as:
 #
@@ -41,11 +42,21 @@ class List(models.Model):
     def get_absolute_url(self):
         return reverse('view_list', args=[self.id])
 
+=======
+class List(models.Model):
+
+    def get_absolute_url(self):
+        return reverse('view_list', args=[self.id])
+
+
+
+>>>>>>> master
 class Item(models.Model):
     text = models.TextField(default='')
     list = models.ForeignKey(List, default=None)
 
     class Meta:
+<<<<<<< HEAD
         unique_together = ('list', 'text')
 #   #   #   #   #   #   #   ##   #   #   #   #   #   #   #
 # The above produces 'no such column: list_item.text
@@ -53,3 +64,11 @@ class Item(models.Model):
 #       * also need to add a default
 # run:
 #   $ python manage.py makemigrations
+=======
+        ordering = ('id',)
+        unique_together = ('list', 'text')
+
+
+    def __str__(self):
+        return self.text
+>>>>>>> master

@@ -1,7 +1,14 @@
 from django.test import TestCase
 from django.utils.html import escape
 
+<<<<<<< HEAD
 from lists.forms import ItemForm, EMPTY_ITEM_ERROR
+=======
+from lists.forms import (
+    DUPLICATE_ITEM_ERROR, EMPTY_ITEM_ERROR,
+    ExistingListItemForm, ItemForm,
+)
+>>>>>>> master
 from lists.models import Item, List
 
 
@@ -30,7 +37,11 @@ class NewListTest(TestCase):
     def test_redirects_after_POST(self):
         response = self.client.post('/lists/new', data={'text': 'A new list item'})
         new_list = List.objects.first()
+<<<<<<< HEAD
         self.assertRedirects(response, '/lists/%d/' % (new_list.id,))
+=======
+        self.assertRedirects(response, f'/lists/{new_list.id}/')
+>>>>>>> master
 
 
     def test_for_invalid_input_renders_home_template(self):
@@ -60,21 +71,34 @@ class ListViewTest(TestCase):
 
     def test_uses_list_template(self):
         list_ = List.objects.create()
+<<<<<<< HEAD
         response = self.client.get('/lists/%d/' % (list_.id,))
+=======
+        response = self.client.get(f'/lists/{list_.id}/')
+>>>>>>> master
         self.assertTemplateUsed(response, 'list.html')
 
 
     def test_passes_correct_list_to_template(self):
         other_list = List.objects.create()
         correct_list = List.objects.create()
+<<<<<<< HEAD
         response = self.client.get('/lists/%d/' % (correct_list.id,))
+=======
+        response = self.client.get(f'/lists/{correct_list.id}/')
+>>>>>>> master
         self.assertEqual(response.context['list'], correct_list)
 
 
     def test_displays_item_form(self):
         list_ = List.objects.create()
+<<<<<<< HEAD
         response = self.client.get('/lists/%d/' % (list_.id,))
         self.assertIsInstance(response.context['form'], ItemForm)
+=======
+        response = self.client.get(f'/lists/{list_.id}/')
+        self.assertIsInstance(response.context['form'], ExistingListItemForm)
+>>>>>>> master
         self.assertContains(response, 'name="text"')
 
 
@@ -86,7 +110,11 @@ class ListViewTest(TestCase):
         Item.objects.create(text='other list item 1', list=other_list)
         Item.objects.create(text='other list item 2', list=other_list)
 
+<<<<<<< HEAD
         response = self.client.get('/lists/%d/' % (correct_list.id,))
+=======
+        response = self.client.get(f'/lists/{correct_list.id}/')
+>>>>>>> master
 
         self.assertContains(response, 'itemey 1')
         self.assertContains(response, 'itemey 2')
@@ -98,7 +126,11 @@ class ListViewTest(TestCase):
         other_list = List.objects.create()
         correct_list = List.objects.create()
         self.client.post(
+<<<<<<< HEAD
             '/lists/%d/' % (correct_list.id,),
+=======
+            f'/lists/{correct_list.id}/',
+>>>>>>> master
             data={'text': 'A new item for an existing list'}
         )
 
@@ -112,16 +144,27 @@ class ListViewTest(TestCase):
         other_list = List.objects.create()
         correct_list = List.objects.create()
         response = self.client.post(
+<<<<<<< HEAD
             '/lists/%d/' % (correct_list.id,),
             data={'text': 'A new item for an existing list'}
         )
         self.assertRedirects(response, '/lists/%d/' % (correct_list.id,))
+=======
+            f'/lists/{correct_list.id}/',
+            data={'text': 'A new item for an existing list'}
+        )
+        self.assertRedirects(response, f'/lists/{correct_list.id}/')
+>>>>>>> master
 
 
     def post_invalid_input(self):
         list_ = List.objects.create()
         return self.client.post(
+<<<<<<< HEAD
             '/lists/%d/' % (list_.id,),
+=======
+            f'/lists/{list_.id}/',
+>>>>>>> master
             data={'text': ''}
         )
 
@@ -136,8 +179,28 @@ class ListViewTest(TestCase):
 
     def test_for_invalid_input_passes_form_to_template(self):
         response = self.post_invalid_input()
+<<<<<<< HEAD
         self.assertIsInstance(response.context['form'], ItemForm)
+=======
+        self.assertIsInstance(response.context['form'], ExistingListItemForm)
+>>>>>>> master
 
     def test_for_invalid_input_shows_error_on_page(self):
         response = self.post_invalid_input()
         self.assertContains(response, escape(EMPTY_ITEM_ERROR))
+<<<<<<< HEAD
+=======
+
+    def test_duplicate_item_validation_errors_end_up_on_lists_page(self):
+        list1 = List.objects.create()
+        item1 = Item.objects.create(list=list1, text='texttttt')
+        response = self.client.post(
+            f'/lists/{list1.id}/',
+            data={'text':'texttttt'}
+        )
+
+        expected_error = escape(DUPLICATE_ITEM_ERROR)
+        self.assertContains(response, expected_error)
+        self.assertTemplateUsed(response, 'list.html')
+        self.assertEqual(Item.objects.all().count(), 1)
+>>>>>>> master
