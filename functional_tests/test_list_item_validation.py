@@ -5,12 +5,9 @@ from .base import FunctionalTest
 
 class ItemValidationTest(FunctionalTest):
 
-<<<<<<< HEAD
-=======
     def get_error_element(self):
         return self.browser.find_element(By.CSS_SELECTOR, '.has-error')
 
->>>>>>> master
     def test_cannot_add_empty_list_items(self):
         # # James goes to the home page and accidentally tries to submit an empty list item
         ## - he hits ENTER on the empty input box
@@ -59,12 +56,7 @@ class ItemValidationTest(FunctionalTest):
 
         ## He sees an error message
         self.wait_for(lambda: self.assertEqual(
-<<<<<<< HEAD
             self.browser.find_element(By.CSS_SELECTOR, '.has-error').text,
-            "You've already added this to your list!"
-        ))
-=======
-            self.get_error_element().text,
             "You've already added this to your list!"
         ))
 
@@ -88,4 +80,3 @@ class ItemValidationTest(FunctionalTest):
         self.wait_for(lambda: self.assertFalse(
             self.get_error_element().is_displayed()
         ))
->>>>>>> master

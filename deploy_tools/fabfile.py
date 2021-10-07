@@ -9,11 +9,7 @@ host = env.host
 
 def deploy():
     site_folder = '/home/' + env.user + '/sites/' + env.host
-<<<<<<< HEAD
     source_folder = site_folder + '/source'
-=======
-    source_folder = site_folder + '/source3'
->>>>>>> master
     _create_directory_structure_if_necessary(site_folder)
     _get_latest_source(source_folder)
     _update_settings(source_folder, env.host)
@@ -23,11 +19,7 @@ def deploy():
 
 
 def _create_directory_structure_if_necessary(site_folder):
-<<<<<<< HEAD
     for subfolder in ('db', 'static', 'virtualenv', 'source'):
-=======
-    for subfolder in ('db', 'static', 'virtualenv', 'source3'):
->>>>>>> master
         run('mkdir -p ' + site_folder + '/' + subfolder)
 
 
