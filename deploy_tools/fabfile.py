@@ -1,8 +1,9 @@
 from fabric.contrib.files import append, exists, sed
-from fabric.api import env, local, run
+from fabric.api import env, local, run, sudo
 import random
 
 REPO_URL = 'https://github.com/jdotb/superlists.git'
+systemd_folder = '/etc/'
 user = env.user
 host = env.host
 
@@ -16,6 +17,7 @@ def deploy():
     _update_virtualenv(source_folder)
     _update_static_files(source_folder)
     _update_database(source_folder)
+    _add_nginx_config()
 
 
 def _create_directory_structure_if_necessary(site_folder):
@@ -56,10 +58,18 @@ def _update_virtualenv(source_folder):
 
 
 def _update_static_files(source_folder):
-    run('cd %s && ../virtualenv/bin/python3 manage.py collectstatic --noinput' % (
-        source_folder))
+    run('cd %s && ../virtualenv/bin/python3 manage.py collectstatic --noinput' % source_folder)
 
 
 def _update_database(source_folder):
     run('cd %s && ../virtualenv/bin/python3 manage.py migrate --noinput' % (
         source_folder))
+
+
+# TODO: Add nginx config script
+# def _add_nginx_config(source_folder, site_name):
+#     sudo('cd %s && '
+#          'ln -s deploy_tools/nginx.template.conf /etc/nginx/sites-available/%s.conf' % (source_folder, site_name))
+
+# TODO: Add gunicorn config script
+# def _add_gunicorn_service
