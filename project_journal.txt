@@ -595,15 +595,18 @@ dep!    4. If the mount doesn't work (mine didn't) - you can mount manually this
 **************
 > A lot of the procedure above was done before I knew what I was doing (I still don't know, but I have a much better idea)
 
-> The easiest way to do this is to just setup nginx on the remote@server as a non-root user (gametime@superlists-app)
+#======================================================================================================================#
+TOOK A BREAK FROM THE JOURNAL - FIXED SOME ISSUES, REFACTORED SOME CODE, HACKED AT GIT, PUSHED CODE TO LIVE
+#======================================================================================================================#
 
-    /home/gametime/sites/superlists-stage.com/
-    /home/gametime/sites/superlists-live.com/
+Now that we're live, we need some kind of authentication for users to be able to keep their lists stored.
 
-    gametime@superlists-app: echo HOSTNAME=jdotbdotb.com
-    gametime@superlists-app: echo SITENAME=stage-superlists.$hostname.com
-    gametime@superlists-app: sudo mkdir -p ~/home/gametime/sites/$SITENAME/database
-    gametime@superlists-app: sudo mkdir -p ~/home/gametime/sites/$SITENAME/static
-    gametime@superlists-app: sudo mkdir -p ~/home/gametime/sites/$SITENAME/virtualenv
-    gametime@superlists-app: sudo git clone https://www.github.com/jdotb/superlists.git ~/gametime/sites/$SITENAME/source
+Here is the login rundown:
+    1. When user wants to login, generate a secret token for them, store the token in the db linked to their email,
+        then send that token to them
+    2. The user will check their email and click the generated link which contains their login token
+    3. When the user clicks the link, we check the db for their token, and if it exists, they are logged in as the associated user
+
+        # Prep an app for accounts
+            $ python manage.py startapp accounts
 
