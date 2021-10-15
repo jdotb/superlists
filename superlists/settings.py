@@ -61,7 +61,7 @@ INSTALLED_APPS = [
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
-AUTHENTICATION_BACKENDS = [
+AUTHENTICATION_BACKEND = [
     'accounts.authentication.PasswordlessAuthenticationBackend',
 ]
 
@@ -147,8 +147,8 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 
-EMAIL_HOST = 'smtp.jdotbdotb.com'
-EMAIL_HOST_USER = '_mainaccount@jdotbdotb.com'
+EMAIL_HOST = 'mail.jdotbdotb.com'
+EMAIL_HOST_USER = 'jdotb@jdotbdotb.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
-EMAIL_PORT = 26
+EMAIL_PORT = 587
 EMAIL_USE_TLS = True
