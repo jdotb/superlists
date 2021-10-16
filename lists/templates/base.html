@@ -6,35 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>To-Do lists</title>
-    <link href="../../static/lists/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../static/lists/base.css" rel="stylesheet">
+    {% load static %}
+      <link href="{% static 'lists/css/bootstrap.min.css'%}" rel="stylesheet">
+      <link href="{% static 'lists/base.css'%}" rel="stylesheet">
   </head>
 
   <body>
-<div class="container">
+    <div class="container">
 
-    <div class="row">
-
-        <div class="col-md-6 col-md-offset-3 jumbotron">
-
-            <div class="text-center">
-                <h1>{% block header_text %}{% endblock %}</h1>
-
-                <form method="POST" action="{% block form_action %}{% endblock %}">
-                    {{ form.text }}
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Superlists</a>
+                {% if user.email %}
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="navbar-text">Logged in as {{ user.email }}</li>
+                    <li><a href="{% url 'logout' %}">Log out</a></li>
+                </ul>
+                {% else %}
+                <form class="navbar-form navbar-right"
+                      method="POST"
+                      action="{% url 'send_login_email' %}">
+                    <span>Enter email to log in:</span>
+                    <input class="form-control" name="email" type="text" />
                     {% csrf_token %}
-                    {% if form.errors %}
-
-                        <div class="form-group has-error">
-                            <span class="help-block">{{ form.text.errors }}</span>
-                        </div>
-
-                    {% endif %}
                 </form>
+                {% endif %}
+            </div>
+        </nav>
 
+        {% if messages %}
+            <div class="row">
+                <div class="col-md-8">
+                    {% for message in messages %}
+                      {% if message.level_tag == 'success' %}
+                        <div class="alert alert-success">{{ message }}</div>
+                      {% else %}
+                        <div class="alert alert-warning">{{ message }}</div>
+                      {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+
+        <div class="row">
+
+            <div class="col-md-6 col-md-offset-3 jumbotron">
+
+                <div class="text-center">
+                    <h1>{% block header_text %}{% endblock %}</h1>
+
+                    <form method="POST" action="{% block form_action %}{% endblock %}">
+                        {{ form.text }}
+                        {% csrf_token %}
+                        {% if form.errors %}
+
+                            <div class="form-group has-error">
+                                <span class="help-block">{{ form.text.errors }}</span>
+                            </div>
+
+                        {% endif %}
+                    </form>
+
+                </div>
             </div>
         </div>
-    </div>
 
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -45,8 +80,8 @@
 
 </div>
 
-  <script src="/static/jquery.js"></script>
-  <script src="/static/list.js"></script>
+  <script src="static/jquery.js"></script>
+  <script src="static/list.js"></script>
 
   <script>
       $(document).ready(function () {

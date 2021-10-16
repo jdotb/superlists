@@ -13,11 +13,28 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
+PROJECT_DIR = os.path.abspath(__file__)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+        },
+    },
+    'root': {'level': 'INFO'},
+}
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '*pix_db&&yyuu)r*4k_ktn$rxe7h46&&y-h+aj9@9ft9qf+r2)'
@@ -27,7 +44,8 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = ['jdotbdotb.com', 'live.jdotbdotb.com', 'live-superlists.jdotbdotb.com', 'stage-superlists.jdotbdotb.com', 'stage.jdotbdotb.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'jdotbdotb.com', 'live.jdotbdotb.com', 'live-superlists.jdotbdotb.com',
+                 'stage-superlists.jdotbdotb.com', 'stage.jdotbdotb.com']
 
 # Application definition
 
@@ -39,6 +57,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'lists',
+    'accounts',
+]
+
+AUTH_USER_MODEL = 'accounts.User'
+AUTHENTICATION_BACKEND = [
+    'accounts.authentication.PasswordlessAuthenticationBackend',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +101,7 @@ WSGI_APPLICATION = 'superlists.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.abspath(os.path.join(BASE_DIR, '../db/db.sqlite3')),
+        'NAME': os.path.abspath(os.path.join(BASE_DIR, 'db/db.sqlite3')),
     }
 }
 
@@ -115,10 +139,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATICFILES_FINDERS = (
-'django.contrib.staticfiles.finders.FileSystemFinder',
-'django.contrib.staticfiles.finders.AppDirectoriesFinder'
-)
-
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../static/lists'))
+STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, 'static/lists'))
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+
+EMAIL_HOST = 'mail.jdotbdotb.com'
+EMAIL_HOST_USER = 'jdotb@jdotbdotb.com'
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
