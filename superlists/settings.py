@@ -44,8 +44,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'jdotbdotb.com', 'live.jdotbdotb.com', 'live-superlists.jdotbdotb.com',
-                 'stage-superlists.jdotbdotb.com', 'stage.jdotbdotb.com']
+ALLOWED_HOSTS =
 
 # Application definition
 
