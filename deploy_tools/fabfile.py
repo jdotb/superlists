@@ -11,6 +11,34 @@ host = env.host
 env.colorize_errors = 'true'
 
 
+def _get_base_folder(host):
+    return '~/sites/' + host
+
+
+def _get_manage_dot_py(host):
+    return '{path}/virtualenv/bin/python {path}/source/manage.py'.format(
+        path=_get_base_folder(host)
+    )
+
+
+def reset_database():
+    run('{manage_py} flush --noinput'.format(
+        manage_py=_get_manage_dot_py(env.host)
+    ))
+
+
+# Creates session in db - if running locally, call directly.
+# If running against the server, need to make a few hops:
+#    - use subprocess to get to Fabric using 'fab'
+#    - 'fab' lets us run management command that calls the same function on the server
+def create_session_on_server(email):
+    session_key = run('{manage_py} create_session {email}'.format(
+        manage_py=_get_manage_dot_py(env.host),
+        email=email,
+    ))
+    print(session_key)
+
+
 def deploy():
     site_folder = '/home/' + env.user + '/sites/' + env.host
     source_folder = site_folder + '/source'
@@ -48,17 +76,16 @@ def _get_latest_source(source_folder):
 
 
 def _update_settings(source_folder, site_name):
-    def _update_settings(source_folder, site_name):
-        settings_path = source_folder + '/superlists/settings.py'
-        sed(settings_path, "DEBUG = True", "DEBUG = False")
-        sed(settings_path, 'DOMAIN = "localhost"', 'DOMAIN = "%s"' % (site_name,))
-        secret_key_file = source_folder + '/superlists/secret_key.py'
-        if not exists(secret_key_file):
-            chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
-            key = ''.join(random.SystemRandom().choice(chars) for _ in range(50))
-            append(secret_key_file, "SECRET_KEY = '%s'" % key)
-        append(settings_path, '\nfrom .secret_key import SECRET_KEY')
-        print("Settings updated, moving to update virtualenv")
+    settings_path = source_folder + '/superlists/settings.py'
+    sed(settings_path, "DEBUG = True", "DEBUG = False")
+    sed(settings_path, 'DOMAIN = "127.0.01"', 'DOMAIN = "%s"' % (site_name,))
+    secret_key_file = source_folder + '/superlists/secret_key.py'
+    if not exists(secret_key_file):
+        chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
+        key = ''.join(random.SystemRandom().choice(chars) for _ in range(50))
+        append(secret_key_file, "SECRET_KEY = '%s'" % key)
+    append(settings_path, '\nfrom .secret_key import SECRET_KEY')
+    print("Settings updated, moving to update virtualenv")
 
 
 def _update_virtualenv(source_folder, site_folder):
