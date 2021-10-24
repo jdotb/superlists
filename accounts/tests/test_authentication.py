@@ -2,9 +2,17 @@ from django.test import TestCase
 from django.contrib.auth import get_user_model
 from accounts.authentication import PasswordlessAuthenticationBackend
 from accounts.models import Token
+
 User = get_user_model()
 
+
 class AuthenticateTest(TestCase):
+
+    def test_creates_new_user_if_necessary_for_valid_assertion(self, mock_post):
+        mock_post.return_value.json.return_value = {'status': 'okay', 'email': 'a@b.com'}
+        found_user = self.backend.authenticate('an assertion')
+        new_user = User.objects.get(email='a@b.com')
+        self.assertEqual(found_user, new_user)
 
     def test_returns_None_if_no_such_token(self):
         result = PasswordlessAuthenticationBackend().authenticate(
@@ -25,6 +33,7 @@ class AuthenticateTest(TestCase):
         token = Token.objects.create(email=email)
         user = PasswordlessAuthenticationBackend().authenticate(token.uid)
         self.assertEqual(user, existing_user)
+
 
 class GetUserTest(TestCase):
 

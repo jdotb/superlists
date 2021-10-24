@@ -44,7 +44,9 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = []
+DOMAIN = "127.0.0.1"
+
+ALLOWED_HOSTS = [DOMAIN]
 
 # Application definition
 
@@ -57,11 +59,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'lists',
     'accounts',
+    'functional_tests',
 ]
 
-AUTH_USER_MODEL = 'accounts.User'
+AUTH_USER_MODEL = 'accounts.ListUser'
 AUTHENTICATION_BACKEND = [
-    'accounts.authentication.PasswordlessAuthenticationBackend',
+    'accounts.authentication.PersonaAuthenticationBackend',
 ]
 
 MIDDLEWARE = [
@@ -139,7 +142,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, 'static/lists'))
+STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, '../static'))
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'superlists', 'static'),
+)
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',

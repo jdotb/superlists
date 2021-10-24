@@ -17,6 +17,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">Superlists</a>
+                <a class="btn navbar-btn navbar-right" id="id_login" href="#"
                 {% if user.email %}
                 <ul class="nav navbar-nav navbar-right">
                     <li class="navbar-text">Logged in as {{ user.email }}</li>
@@ -82,10 +83,10 @@
 
   <script src="static/jquery.js"></script>
   <script src="static/list.js"></script>
-
+  <script src="/static/accounts/accounts.js"></script>
   <script>
       $(document).ready(function () {
-        window.Superlists.initialize();
+        Superlists.Accounts.initialize(navigator);
       });
   </script>
 

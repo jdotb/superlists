@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="qunit-fixture">
+        <a id="id_login">Sign in</a>
+    </div>
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="../../../superlists/static/tests/qunit.js"></script>
+    <script src="../accounts.js"></script>
+    <script>
+/*global $, test, equal, sinon, Superlists */
+
+test("initialize binds sign in button to navigator.id.request", function () {
+    var requestWasCalled = false; //
+    var mockRequestFunction = function () { requestWasCalled = true; }; //
+    var mockNavigator = {
+        id: {
+            request: mockRequestFunction
+        }
+    };
+    Superlists.Accounts.initialize(mockNavigator);
+    equal(requestWasCalled, false, 'check request not called before click');
+    $('#id_login').trigger('click');
+    equal(requestWasCalled, true, 'check request called after click');
+
+    Superlists.Accounts.initialize(mockNavigator); //
+
+    $('#id_login').trigger('click'); //
+
+    equal(requestWasCalled, true); //
+});
+
+    </script>
+</body>
+</html>

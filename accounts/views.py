@@ -1,3 +1,6 @@
+import sys
+from django.contrib.auth import authenticate
+from django.contrib.auth import login as auth_login, logout as auth_logout
 from django.contrib import auth, messages
 from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
@@ -27,7 +30,13 @@ def send_login_email(request):
 
 
 def login(request):
-    user = auth.authenticate(uid=request.GET.get('token'))
-    if user:
-        auth.login(request, user)
+    print('login view', file=sys.stderr)
+    # user = PersonaAuthenticationBackend().authenticate(request.POST['assertion'])
+    user = authenticate(assertion=request.POST['assertion'])
+    if user is not None:
+        auth_login(request, user)
+    return redirect('/')
+
+def logout(requests):
+    auth_logout(requests)
     return redirect('/')
