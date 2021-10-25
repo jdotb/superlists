@@ -4,7 +4,7 @@ from django.urls import reverse
 
 
 class List(models.Model):
-    owner = models.ForeignKey(settings.AUTH_USER_MODEL, blank=True, null=True)
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL, blank=True, null=True, on_delete=models.CASCADE)
 
     def get_absolute_url(self):
         return reverse('view_list', args=[self.id])
@@ -25,7 +25,7 @@ class List(models.Model):
 
 class Item(models.Model):
     text = models.TextField(default='')
-    list = models.ForeignKey(List, default=None)
+    list = models.ForeignKey(List, default=None, on_delete=models.CASCADE)
 
     class Meta:
         ordering = ('id',)

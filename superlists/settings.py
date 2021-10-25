@@ -57,7 +57,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'lists',
     'accounts',
+    'functional_tests',
 ]
+
+DEFAULT_AUTO_FIELD='django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.User'
 AUTHENTICATION_BACKEND = [
