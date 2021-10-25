@@ -44,7 +44,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = ["stage-superlists.jdotbdotb.com"]
+ALLOWED_HOSTS = ["stage-superlists.jdotbdotb.com", "127.0.0.1"]
 
 # Application definition
 
@@ -144,8 +144,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, 'static/lists'))
 
+STATICFILES_DIRS = [
+    "/lists/static",
+]
+
 STATICFILES_FINDERS = [
-    'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 
