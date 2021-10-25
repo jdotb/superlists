@@ -1,5 +1,5 @@
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from .base import FunctionalTest
 
 
@@ -47,8 +47,8 @@ class ItemValidationTest(FunctionalTest):
         ## James goes to the home page and starts a new list
         self.browser.get(self.live_server_url)
         self.get_item_input_box().send_keys('Buy chocolate')
-        self.get_item_input_box().send_keys(Keys.ENTER)
-        self.wait_for_row_in_list_table('1: Buy chocolate')
+        # self.get_item_input_box().send_keys(Keys.ENTER)
+        # self.wait_for_row_in_list_table('1: Buy chocolate')
 
         ## He accidentally enters 'Buy chocolate' again
         self.get_item_input_box().send_keys('Buy chocolate')
@@ -56,16 +56,14 @@ class ItemValidationTest(FunctionalTest):
 
         ## He sees an error message
         self.wait_for(lambda: self.assertEqual(
-            self.browser.find_element(By.CSS_SELECTOR, '.has-error').text,
-            "You've already got this in your list!"
+            self.get_error_element().text,
+            "You've already got this in your list"
         ))
 
     def test_error_messages_are_cleared_on_input(self):
         ## James begins a lists which causes a validation error
         self.browser.get(self.live_server_url)
-        self.get_item_input_box().send_keys('Bang Bang POW!')
-        self.get_item_input_box().send_keys(Keys.ENTER)
-        self.wait_for_row_in_list_table('1: Bang Bang POW!')
+        self.add_list_item('Bang Bang POW!')
         self.get_item_input_box().send_keys('Bang Bang POW!')
         self.get_item_input_box().send_keys(Keys.ENTER)
 

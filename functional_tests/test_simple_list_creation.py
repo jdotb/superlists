@@ -34,7 +34,7 @@ class NewVisitorTest(FunctionalTest):
 
         ## James notices a new text box awaits his input, so he enters "Find a cool place to fly new drone"
         inputbox = self.get_item_input_box()
-        inputbox.send_keys('Find a cool place to fly new drone')
+        self.add_list_item('Find a cool place to fly new drone')
         inputbox.send_keys(Keys.ENTER)
 
         ## The page refreshes and now he sees both of the items he's added to the list
@@ -46,10 +46,7 @@ class NewVisitorTest(FunctionalTest):
     def test_multiple_users_can_start_lists_at_different_urls(self):
         ## James starts a new to-do lists
         self.browser.get(self.live_server_url)
-        inputbox = self.get_item_input_box()
-        inputbox.send_keys('Buy new drone')
-        inputbox.send_keys(Keys.ENTER)
-        self.wait_for_row_in_list_table('1: Buy new drone')
+        self.add_list_item('Buy new drone')
 
         ## He notices his list has a unique URL
         james_list_url = self.browser.current_url
@@ -62,16 +59,13 @@ class NewVisitorTest(FunctionalTest):
         self.browser = webdriver.Firefox()
 
         # Candice visits the home page and doesn't see any trace of James' list
-        self.browser.get(self.live_server_url)
+        self.browser.get(self.server_url)
         page_text = self.browser.find_element_by_tag_name('body').text
         self.assertNotIn('Buy new drone', page_text)
         self.assertNotIn('fly new drone', page_text)
 
         # Candice starts a new list by entering a new item. She is less interesting than James...
-        inputbox = self.get_item_input_box()
-        inputbox.send_keys('Buy cheese')
-        inputbox.send_keys(Keys.ENTER)
-        self.wait_for_row_in_list_table('1: Buy cheese')
+        self.add_list_item('Buy cheese')
 
         # Candice gets her own unique URL
         candice_list_url = self.browser.current_url

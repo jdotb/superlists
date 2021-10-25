@@ -44,7 +44,9 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = []
+DOMAIN = 'stage-superlists.jdotbdotb.com', '*.jdotbdotb.com'
+
+ALLOWED_HOSTS = [DOMAIN]
 
 # Application definition
 
