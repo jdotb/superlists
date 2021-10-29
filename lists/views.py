@@ -1,8 +1,9 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect, render, reverse
 from django.contrib.auth import get_user_model
 
 from lists.forms import ExistingListItemForm, ItemForm, NewListForm
 from lists.models import List
+
 User = get_user_model()
 
 
@@ -13,9 +14,24 @@ def home_page(request):
 def new_list(request):
     form = NewListForm(data=request.POST)
     if form.is_valid():
+        list_ = List()
+        # list_.owner = request.user
+        # list_ = form.save(owner=request.user)
+        list_.save()
         list_ = form.save(owner=request.user)
-        return redirect(list_)
-    return render(request, 'home.html', {'form': form})
+        # return redirect(list_)
+        return redirect(str(list_.get_absolute_url()))
+    else:
+        return render(request, 'home.html', {'form': form})
+
+
+# def new_list2(request):
+#     form = NewListForm(data=request.POST)
+#     if form.is_valid():
+#         list_ = form.save(owner=request.user)
+#         return redirect(list_)
+#     # list_ = form.save(owner=request.user)
+#     return render(request, 'home.html', {'form': form})
 
 
 def view_list(request, list_id):

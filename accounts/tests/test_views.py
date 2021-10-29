@@ -32,7 +32,7 @@ class SendLoginEmailViewTest(TestCase):
         self.assertEqual(mock_send_mail.called, True)
         (subject, body, from_email, to_list), kwargs = mock_send_mail.call_args
         self.assertEqual(subject, 'Your login link for Superlists')
-        self.assertEqual(from_email, 'noreply@superlists')
+        self.assertEqual(from_email, 'superlists.mailer@gmail.com')
         self.assertEqual(to_list, ['gametime@example.com'])
 
     def test_creates_token_associated_with_email(self):

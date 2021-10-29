@@ -1,6 +1,13 @@
 from os import path
 import subprocess
+# from fabric.api import run
+# from fabric.context_managers import settings
+
 THIS_FOLDER = path.dirname(path.abspath(__file__))
+
+
+# def _get_manage_dot_py(host):
+#     return f'~/sites/{host}/virtualenv/bin/python ~/sites/{host}/source/manage.py'
 
 def reset_database(host):
     subprocess.check_call(

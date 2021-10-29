@@ -44,7 +44,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = ["stage-superlists.jdotbdotb.com", "127.0.0.1"]
+ALLOWED_HOSTS = ["stage-superlists.jdotbdotb.com", "127.0.0.1", "localhost"]
 
 # Application definition
 
@@ -144,16 +144,17 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.abspath(os.path.join(BASE_DIR, 'static/lists'))
 
-STATICFILES_DIRS = [
-    "/lists/static",
-]
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'lists/static/lists')
+)
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 
-EMAIL_HOST = 'mail.jdotbdotb.com'
-EMAIL_HOST_USER = 'jdotb@jdotbdotb.com'
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+# DEFAULT_CHARSET = 'utf-8'
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = "superlists.mailer@gmail.com"
+EMAIL_HOST_PASSWORD = 'vzzaykyuorlovnqe'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
