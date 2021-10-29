@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
 
-{% block list_form %}{% endblock %}
-
 {% block header_text %}My Lists{% endblock %}
 
+{% block list_form %}{% endblock %}
+
 {% block extra_content %}
+<!--    variable 'owner' represents the user -->
     <h2>{{ owner.email }}'s lists</h2>
     <ul>
         {% for list in owner.list_set.all %}

@@ -13,7 +13,6 @@
       <!-- Bootstrap -->
       <link href="{% static 'lists/css/bootstrap.min.css'%}" rel="stylesheet">
       <link href="{% static 'lists/base.css'%}" rel="stylesheet">
-      <link href="{% static 'lists/my_css.css'%}" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -91,8 +90,8 @@
     </div>
 </div>
 
-  <script src="static/jquery.js"></script>
-  <script src="static/list.js"></script>
+  <script src="{% static 'jquery.js' %}"></script>
+  <script src="{% static 'list.js' %}"></script>
 
   <script>
       $(document).ready(function () {
